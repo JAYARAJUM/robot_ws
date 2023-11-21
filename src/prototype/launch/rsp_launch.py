@@ -32,7 +32,7 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='my_robot_state_publisher_node',
         emulate_tty=True,
-        parameters=[{'use_sim_time':True,
+        parameters=[{'use_sim_time':False,
                      'publish_frequency':50.0,
         'robot_description':Command(['xacro ',xacro_file])}],
         output="screen"
@@ -48,9 +48,9 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_sim_time',
-            default_value='true',
+            default_value='false',
             description='Use sim time if true'
         ),
         node_robot_state_publisher,
-        joint_state_publisher_gui
+        #joint_state_publisher_gui
     ])

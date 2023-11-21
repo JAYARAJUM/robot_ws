@@ -1,0 +1,581 @@
+[0.128s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.129s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b49b8a6eec0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b49b8b6b610>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b49b8b6b610>>, mixin_verb=('build',))
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.327s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jayaaraju/waiter_robot_ws/src'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'ros'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['cmake', 'python']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'cmake'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'python'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['python_setup_py']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'python_setup_py'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'cmake'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'python'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extensions ['python_setup_py']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_4wd) by extension 'python_setup_py'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(motor_control) by extension 'ros'
+[0.343s] DEBUG:colcon.colcon_core.package_identification:Package 'motor_control' with type 'ros.ament_cmake' and name 'motor_control'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(navigator_planner) by extension 'ros'
+[0.344s] DEBUG:colcon.colcon_core.package_identification:Package 'navigator_planner' with type 'ros.ament_cmake' and name 'navigator_planner'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(prototype) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'prototype' with type 'ros.ament_cmake' and name 'prototype'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(py_trees_ros_tutorials) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'py_trees_ros_tutorials' with type 'ros.ament_python' and name 'py_trees_ros_tutorials'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_mapping) by extension 'ros'
+[0.348s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_mapping' with type 'ros.ament_cmake' and name 'ros2_mapping'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(serial_driver) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'serial_driver' with type 'ros.catkin' and name 'serial'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(waiter_tree) by extension 'ros'
+[0.352s] DEBUG:colcon.colcon_core.package_identification:Package 'waiter_tree' with type 'ros.ament_cmake' and name 'waiter_tree'
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.386s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/jayaaraju/dock_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.386s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/jayaaraju/nav_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.386s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/jayaaraju/proto_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.386s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/jayaaraju/pallet_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.386s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/jayaaraju/prototype/prototype/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/nav_ws/install/sattva_bot' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/nav_ws/install/ros2_mapping' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/nav_ws/install/opennav_docking' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/proto_ws/install/sattva_bot' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/proto_ws/install/prototype' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/proto_ws/install/pallet_loader' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/pallet_ws/install/yolov5_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/pallet_ws/install/pallet_loader' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/prototype/prototype/install/serial_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/prototype/prototype/install/prototype' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/prototype/prototype/install/motor_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/prototype/prototype/install/io_context' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.387s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jayaaraju/prototype/prototype/install/asio_cmake_module' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/nav_ws/install/sattva_bot' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/nav_ws/install/ros2_mapping' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/nav_ws/install/opennav_docking' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/proto_ws/install/sattva_bot' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/proto_ws/install/prototype' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/proto_ws/install/pallet_loader' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/pallet_ws/install/serial' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/pallet_ws/install/pallet_loader' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/prototype/prototype/install/serial_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/prototype/prototype/install/prototype' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/prototype/prototype/install/motor_control' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/prototype/prototype/install/io_context' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.388s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jayaaraju/prototype/prototype/install/asio_cmake_module' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.389s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/jayaaraju/waiter_robot_ws/src/install
+[0.390s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/jayaaraju/waiter_robot_ws/install
+[0.390s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/jayaaraju/bt_demo/install
+[0.391s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jayaaraju/code_ws/install
+[0.391s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jayaaraju/ros2_ws/install
+[0.392s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jayaaraju/ros2_ws/src/install
+[0.392s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/jayaaraju/main_ws/install
+[0.393s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jayaaraju/led_ws/install
+[0.394s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 396 installed packages in /opt/ros/humble
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'cmake_target' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'navigator_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'navigator_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/navigator_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/navigator_planner', 'symlink_install': True, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'prototype' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'prototype' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/prototype', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/prototype', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/prototype', 'symlink_install': True, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'py_trees_ros_tutorials' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'py_trees_ros_tutorials' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/py_trees_ros_tutorials', 'symlink_install': True, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/ros2_mapping', 'symlink_install': True, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/serial', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/serial_driver', 'symlink_install': True, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'waiter_tree' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'waiter_tree' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/waiter_tree', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/waiter_tree', 'symlink_install': True, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'motor_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'motor_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jayaaraju/waiter_robot_ws/src/build/motor_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jayaaraju/waiter_robot_ws/src/install/motor_control', 'merge_install': False, 'path': '/home/jayaaraju/waiter_robot_ws/src/motor_control', 'symlink_install': True, 'test_result_base': None}
+[0.449s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.450s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.451s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/serial_driver' with build type 'catkin'
+[0.451s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jayaaraju/waiter_robot_ws/src/serial_driver'
+[0.453s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.453s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.460s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/navigator_planner' with build type 'ament_cmake'
+[0.460s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jayaaraju/waiter_robot_ws/src/navigator_planner'
+[0.461s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.461s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.467s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/prototype' with build type 'ament_cmake'
+[0.467s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jayaaraju/waiter_robot_ws/src/prototype'
+[0.468s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.468s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.475s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/py_trees_ros_tutorials' with build type 'ament_python'
+[0.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_trees_ros_tutorials', 'ament_prefix_path')
+[0.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/ament_prefix_path.ps1'
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/ament_prefix_path.dsv'
+[0.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/ament_prefix_path.sh'
+[0.479s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.479s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.485s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/ros2_mapping' with build type 'ament_cmake'
+[0.485s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jayaaraju/waiter_robot_ws/src/ros2_mapping'
+[0.486s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.486s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.495s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/waiter_tree' with build type 'ament_cmake'
+[0.495s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jayaaraju/waiter_robot_ws/src/waiter_tree'
+[0.495s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.495s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/serial_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/serial
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/navigator_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/navigator_planner -- -j8 -l8
+[0.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/prototype': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/prototype -- -j8 -l8
+[1.068s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jayaaraju/waiter_robot_ws/src/py_trees_ros_tutorials'
+[1.069s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.069s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping -- -j8 -l8
+[1.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/waiter_tree': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/waiter_tree -- -j8 -l8
+[1.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/navigator_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/navigator_planner -- -j8 -l8
+[1.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping -- -j8 -l8
+[1.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/prototype' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/prototype -- -j8 -l8
+[1.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/navigator_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/navigator_planner
+[1.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping
+[1.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/prototype': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/prototype
+[1.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_mapping)
+[1.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/ros2_mapping
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping' for CMake module files
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping' for CMake config files
+[1.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_mapping', 'cmake_prefix_path')
+[1.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/hook/cmake_prefix_path.ps1'
+[1.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/hook/cmake_prefix_path.dsv'
+[1.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/hook/cmake_prefix_path.sh'
+[1.589s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/bin'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/lib/pkgconfig/ros2_mapping.pc'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/lib/python3.10/site-packages'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/bin'
+[1.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.ps1'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.dsv'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.sh'
+[1.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.bash'
+[1.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.zsh'
+[1.599s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/colcon-core/packages/ros2_mapping)
+[1.646s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_mapping)
+[1.646s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping' for CMake module files
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping' for CMake config files
+[1.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_mapping', 'cmake_prefix_path')
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/hook/cmake_prefix_path.ps1'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/hook/cmake_prefix_path.dsv'
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/hook/cmake_prefix_path.sh'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/bin'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/lib/pkgconfig/ros2_mapping.pc'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/lib/python3.10/site-packages'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/bin'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.ps1'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.dsv'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.sh'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.bash'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/ros2_mapping/package.zsh'
+[1.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/ros2_mapping/share/colcon-core/packages/ros2_mapping)
+[1.772s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigator_planner)
+[1.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/navigator_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/navigator_planner
+[1.774s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner' for CMake module files
+[1.775s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner' for CMake config files
+[1.776s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigator_planner', 'cmake_prefix_path')
+[1.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/hook/cmake_prefix_path.ps1'
+[1.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/hook/cmake_prefix_path.dsv'
+[1.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/hook/cmake_prefix_path.sh'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/lib'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/bin'
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/lib/pkgconfig/navigator_planner.pc'
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/lib/python3.10/site-packages'
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/bin'
+[1.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.ps1'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.dsv'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.sh'
+[1.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.bash'
+[1.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.zsh'
+[1.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/colcon-core/packages/navigator_planner)
+[1.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigator_planner)
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner' for CMake module files
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner' for CMake config files
+[1.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigator_planner', 'cmake_prefix_path')
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/hook/cmake_prefix_path.ps1'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/hook/cmake_prefix_path.dsv'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/hook/cmake_prefix_path.sh'
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/lib'
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/bin'
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/lib/pkgconfig/navigator_planner.pc'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/lib/python3.10/site-packages'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/bin'
+[1.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.ps1'
+[1.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.dsv'
+[1.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.sh'
+[1.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.bash'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/navigator_planner/package.zsh'
+[1.825s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/navigator_planner/share/colcon-core/packages/navigator_planner)
+[1.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials': PYTHONPATH=/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/build --no-deps symlink_data
+[1.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/waiter_tree' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/waiter_tree -- -j8 -l8
+[1.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/waiter_tree': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/waiter_tree
+[2.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/serial_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/serial
+[2.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/serial -- -j8 -l8
+[2.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(waiter_tree)
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree' for CMake module files
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree' for CMake config files
+[2.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('waiter_tree', 'cmake_prefix_path')
+[2.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/hook/cmake_prefix_path.ps1'
+[2.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/hook/cmake_prefix_path.dsv'
+[2.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/hook/cmake_prefix_path.sh'
+[2.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/waiter_tree' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/waiter_tree
+[2.816s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/bin'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib/pkgconfig/waiter_tree.pc'
+[2.818s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib/python3.10/site-packages'
+[2.818s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/bin'
+[2.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.ps1'
+[2.820s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.dsv'
+[2.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.sh'
+[2.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.bash'
+[2.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.zsh'
+[2.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/colcon-core/packages/waiter_tree)
+[2.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(waiter_tree)
+[2.917s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree' for CMake module files
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree' for CMake config files
+[2.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('waiter_tree', 'cmake_prefix_path')
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/hook/cmake_prefix_path.ps1'
+[2.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/hook/cmake_prefix_path.dsv'
+[2.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/hook/cmake_prefix_path.sh'
+[2.934s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib'
+[2.934s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/bin'
+[2.934s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib/pkgconfig/waiter_tree.pc'
+[2.940s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib/python3.10/site-packages'
+[2.940s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/bin'
+[2.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.ps1'
+[2.943s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.dsv'
+[2.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.sh'
+[2.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.bash'
+[2.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.zsh'
+[2.948s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/colcon-core/packages/waiter_tree)
+[3.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_trees_ros_tutorials', 'pythonpath_develop')
+[3.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/pythonpath_develop.ps1'
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/pythonpath_develop.dsv'
+[3.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/pythonpath_develop.sh'
+[3.040s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials' for CMake module files
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials' for CMake config files
+[3.043s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/lib'
+[3.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials' returned '0': PYTHONPATH=/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/build --no-deps symlink_data
+[3.045s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/bin'
+[3.045s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/lib/pkgconfig/py_trees_ros_tutorials.pc'
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/lib/python3.10/site-packages'
+[3.046s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_trees_ros_tutorials', 'pythonpath')
+[3.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/pythonpath.ps1'
+[3.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/pythonpath.dsv'
+[3.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/hook/pythonpath.sh'
+[3.052s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/bin'
+[3.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_trees_ros_tutorials)
+[3.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/package.ps1'
+[3.058s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/package.dsv'
+[3.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/package.sh'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/package.bash'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/py_trees_ros_tutorials/package.zsh'
+[3.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/py_trees_ros_tutorials/share/colcon-core/packages/py_trees_ros_tutorials)
+[3.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prototype)
+[3.451s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype' for CMake module files
+[3.455s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype' for CMake config files
+[3.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('prototype', 'cmake_prefix_path')
+[3.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/cmake_prefix_path.ps1'
+[3.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/cmake_prefix_path.dsv'
+[3.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/cmake_prefix_path.sh'
+[3.459s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/lib'
+[3.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('prototype', 'ld_library_path_lib')
+[3.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/ld_library_path_lib.ps1'
+[3.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/ld_library_path_lib.dsv'
+[3.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/ld_library_path_lib.sh'
+[3.462s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/bin'
+[3.462s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/lib/pkgconfig/prototype.pc'
+[3.462s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/lib/python3.10/site-packages'
+[3.462s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/bin'
+[3.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.ps1'
+[3.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/prototype' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/prototype
+[3.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.dsv'
+[3.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.sh'
+[3.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.bash'
+[3.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.zsh'
+[3.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/colcon-core/packages/prototype)
+[3.682s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prototype)
+[3.682s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype' for CMake module files
+[3.684s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype' for CMake config files
+[3.685s] Level 1:colcon.colcon_core.shell:create_environment_hook('prototype', 'cmake_prefix_path')
+[3.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/cmake_prefix_path.ps1'
+[3.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/cmake_prefix_path.dsv'
+[3.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/cmake_prefix_path.sh'
+[3.688s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/lib'
+[3.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('prototype', 'ld_library_path_lib')
+[3.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/ld_library_path_lib.ps1'
+[3.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/ld_library_path_lib.dsv'
+[3.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/hook/ld_library_path_lib.sh'
+[3.690s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/bin'
+[3.690s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/lib/pkgconfig/prototype.pc'
+[3.690s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/lib/python3.10/site-packages'
+[3.691s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/prototype/bin'
+[3.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.ps1'
+[3.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.dsv'
+[3.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.sh'
+[3.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.bash'
+[3.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/prototype/package.zsh'
+[3.694s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/prototype/share/colcon-core/packages/prototype)
+[4.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/serial -- -j8 -l8
+[4.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/serial
+[4.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/serial
+[4.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'ros_package_path')
+[4.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/ros_package_path.ps1'
+[4.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/ros_package_path.dsv'
+[4.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/ros_package_path.sh'
+[4.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'pkg_config_path')
+[4.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/pkg_config_path.ps1'
+[4.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/pkg_config_path.dsv'
+[4.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/pkg_config_path.sh'
+[4.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'pkg_config_path_multiarch')
+[4.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/pkg_config_path_multiarch.ps1'
+[4.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/pkg_config_path_multiarch.dsv'
+[4.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/pkg_config_path_multiarch.sh'
+[4.542s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[4.542s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial' for CMake module files
+[4.543s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial' for CMake config files
+[4.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[4.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[4.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[4.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[4.544s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial/lib'
+[4.544s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial/bin'
+[4.544s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig/serial.pc'
+[4.545s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/python3.10/site-packages'
+[4.545s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/serial/bin'
+[4.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/package.ps1'
+[4.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/package.dsv'
+[4.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/package.sh'
+[4.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/package.bash'
+[4.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/serial/share/serial/package.zsh'
+[4.547s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/serial/share/colcon-core/packages/serial)
+[4.547s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jayaaraju/waiter_robot_ws/src/motor_control' with build type 'ament_cmake'
+[4.547s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jayaaraju/waiter_robot_ws/src/motor_control'
+[4.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.548s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/motor_control': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/waiter_robot_ws/src/install/serial:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig:${PKG_CONFIG_PATH} ROS_PACKAGE_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/share:${ROS_PACKAGE_PATH} /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/motor_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/motor_control
+[6.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/waiter_robot_ws/src/install/serial:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig:${PKG_CONFIG_PATH} ROS_PACKAGE_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/share:${ROS_PACKAGE_PATH} /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/motor_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/motor_control
+[6.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/motor_control': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/waiter_robot_ws/src/install/serial:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig:${PKG_CONFIG_PATH} ROS_PACKAGE_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/share:${ROS_PACKAGE_PATH} /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/motor_control -- -j8 -l8
+[10.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/waiter_robot_ws/src/install/serial:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig:${PKG_CONFIG_PATH} ROS_PACKAGE_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/share:${ROS_PACKAGE_PATH} /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/motor_control -- -j8 -l8
+[10.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/motor_control': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/waiter_robot_ws/src/install/serial:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig:${PKG_CONFIG_PATH} ROS_PACKAGE_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/share:${ROS_PACKAGE_PATH} /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/motor_control
+[10.903s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_control)
+[10.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/motor_control' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/waiter_robot_ws/src/install/serial:${CMAKE_PREFIX_PATH} PKG_CONFIG_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/x86_64-linux-gnu/pkgconfig:/home/jayaaraju/waiter_robot_ws/src/install/serial/lib/pkgconfig:${PKG_CONFIG_PATH} ROS_PACKAGE_PATH=/home/jayaaraju/waiter_robot_ws/src/install/serial/share:${ROS_PACKAGE_PATH} /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/motor_control
+[10.904s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control' for CMake module files
+[10.905s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control' for CMake config files
+[10.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'cmake_prefix_path')
+[10.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/cmake_prefix_path.ps1'
+[10.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/cmake_prefix_path.dsv'
+[10.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/cmake_prefix_path.sh'
+[10.907s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/lib'
+[10.907s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'ld_library_path_lib')
+[10.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/ld_library_path_lib.ps1'
+[10.907s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/ld_library_path_lib.dsv'
+[10.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/ld_library_path_lib.sh'
+[10.908s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/bin'
+[10.908s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/lib/pkgconfig/motor_control.pc'
+[10.908s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/lib/python3.10/site-packages'
+[10.908s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/bin'
+[10.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.ps1'
+[10.909s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.dsv'
+[10.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.sh'
+[10.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.bash'
+[10.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.zsh'
+[10.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/colcon-core/packages/motor_control)
+[10.941s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_control)
+[10.942s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control' for CMake module files
+[10.942s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control' for CMake config files
+[10.942s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'cmake_prefix_path')
+[10.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/cmake_prefix_path.ps1'
+[10.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/cmake_prefix_path.dsv'
+[10.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/cmake_prefix_path.sh'
+[10.944s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/lib'
+[10.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_control', 'ld_library_path_lib')
+[10.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/ld_library_path_lib.ps1'
+[10.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/ld_library_path_lib.dsv'
+[10.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/hook/ld_library_path_lib.sh'
+[10.945s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/bin'
+[10.945s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/lib/pkgconfig/motor_control.pc'
+[10.945s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/lib/python3.10/site-packages'
+[10.945s] Level 1:colcon.colcon_core.environment:checking '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/bin'
+[10.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.ps1'
+[10.946s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.dsv'
+[10.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.sh'
+[10.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.bash'
+[10.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/motor_control/package.zsh'
+[10.947s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jayaaraju/waiter_robot_ws/src/install/motor_control/share/colcon-core/packages/motor_control)
+[10.948s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.948s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.948s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.948s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.954s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.955s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.955s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.967s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.967s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jayaaraju/waiter_robot_ws/src/install/local_setup.ps1'
+[10.969s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jayaaraju/waiter_robot_ws/src/install/_local_setup_util_ps1.py'
+[10.970s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jayaaraju/waiter_robot_ws/src/install/setup.ps1'
+[10.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jayaaraju/waiter_robot_ws/src/install/local_setup.sh'
+[10.974s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jayaaraju/waiter_robot_ws/src/install/_local_setup_util_sh.py'
+[10.975s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jayaaraju/waiter_robot_ws/src/install/setup.sh'
+[10.977s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jayaaraju/waiter_robot_ws/src/install/local_setup.bash'
+[10.978s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jayaaraju/waiter_robot_ws/src/install/setup.bash'
+[10.980s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jayaaraju/waiter_robot_ws/src/install/local_setup.zsh'
+[10.980s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jayaaraju/waiter_robot_ws/src/install/setup.zsh'

@@ -1,0 +1,44 @@
+[0.059s] Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/prototype': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/prototype -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/prototype
+[1.068s] -- The C compiler identification is GNU 11.4.0
+[1.068s] -- The CXX compiler identification is GNU 11.4.0
+[1.068s] -- Detecting C compiler ABI info
+[1.068s] -- Detecting C compiler ABI info - done
+[1.069s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.071s] -- Detecting C compile features
+[1.078s] -- Detecting C compile features - done
+[1.078s] -- Detecting CXX compiler ABI info
+[1.078s] -- Detecting CXX compiler ABI info - done
+[1.079s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.080s] -- Detecting CXX compile features
+[1.083s] -- Detecting CXX compile features - done
+[1.084s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.464s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.808s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.936s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[1.945s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[2.055s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.070s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.098s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.153s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.221s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.263s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[2.367s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.019s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.707s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.980s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.031s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.034s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.083s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.084s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.084s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.084s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.135s] -- Found PythonExtra: .so  
+[4.301s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.358s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.363s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.365s] -- Added test 'lint_cmake' to check CMake code style
+[4.367s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.371s] -- Added test 'xmllint' to check XML markup files
+[4.383s] -- Configuring done
+[4.461s] -- Generating done
+[4.466s] -- Build files have been written to: /home/jayaaraju/waiter_robot_ws/src/build/prototype

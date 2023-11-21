@@ -1,0 +1,67 @@
+Built target ament_cmake_python_symlink_waiter_tree
+running egg_info
+writing waiter_tree.egg-info/PKG-INFO
+writing dependency_links to waiter_tree.egg-info/dependency_links.txt
+writing top-level names to waiter_tree.egg-info/top_level.txt
+reading manifest file 'waiter_tree.egg-info/SOURCES.txt'
+writing manifest file 'waiter_tree.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_waiter_tree_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/config/controller_manager.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/config/ekf_map.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/config/gazebo_params.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/config/joystick.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/config/ros2_control.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/config/twist_mux.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/src/__init__.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/waiter_tree/__init__.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/waiter_tree/confirmations.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/waiter_tree/order_detected.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/waiter_tree/order_detection_node.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/worlds/hotel_world.world
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/camera.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/gazebo_control.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/inertial_macros.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/lidar.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/nav_test.gazebo.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/robot_core.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/robot_urdf.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/urdf/ros2_control.xacro
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/launch/joystick_launch.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/launch/rsp_launch.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/launch/rviz2_launch.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/launch/simulation_launch.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/launch/waiter_tree_launch.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/scripts/motor_controller.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/scripts/waiter_robot_bt.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/environment/pythonpath.sh
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/environment/pythonpath.dsv
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/__init__.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/confirmations.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/order_detected.yaml
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/order_detection_node.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib/waiter_tree/waiter_robot_bt.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/lib/waiter_tree/motor_controller.py
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/ament_index/resource_index/package_run_dependencies/waiter_tree
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/ament_index/resource_index/parent_prefix_path/waiter_tree
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/environment/ament_prefix_path.sh
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/environment/path.sh
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/environment/path.dsv
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/local_setup.bash
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/local_setup.sh
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/local_setup.zsh
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/local_setup.dsv
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.dsv
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/ament_index/resource_index/packages/waiter_tree
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/cmake/waiter_treeConfig.cmake
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/cmake/waiter_treeConfig-version.cmake
+-- Symlinking: /home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/share/waiter_tree/package.xml
+Listing '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree'...
+Compiling '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/__init__.py'...
+Compiling '/home/jayaaraju/waiter_robot_ws/src/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/order_detection_node.py'...

@@ -1,0 +1,6 @@
+Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/serial_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/serial
+Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/serial_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/src/install/serial
+Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/serial -- -j8 -l8
+Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/serial -- -j8 -l8
+Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/serial
+Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/serial

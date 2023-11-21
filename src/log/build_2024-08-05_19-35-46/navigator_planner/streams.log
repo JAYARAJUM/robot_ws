@@ -1,0 +1,9 @@
+[0.048s] Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/navigator_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/navigator_planner -- -j8 -l8
+[0.584s] Built target ament_cmake_python_symlink_navigator_planner
+[0.585s] running egg_info
+[0.586s] writing navigator_planner.egg-info/PKG-INFO
+[0.586s] writing dependency_links to navigator_planner.egg-info/dependency_links.txt
+[0.587s] writing top-level names to navigator_planner.egg-info/top_level.txt
+[0.587s] reading manifest file 'navigator_planner.egg-info/SOURCES.txt'
+[0.587s] writing manifest file 'navigator_planner.egg-info/SOURCES.txt'
+[0.587s] Built target ament_cmake_python_build_navigator_planner_egg

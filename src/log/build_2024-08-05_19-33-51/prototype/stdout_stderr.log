@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_generator_c[0m
+[  1%] Built target prototype__cpp
+[ 12%] Built target prototype__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_fastrtps_cpp[0m
+[ 12%] Built target ament_cmake_python_symlink_prototype
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_c[0m
+[ 23%] Built target prototype__rosidl_typesupport_cpp
+[ 34%] Built target prototype__rosidl_typesupport_fastrtps_cpp
+[ 45%] Built target prototype__rosidl_typesupport_fastrtps_c
+[ 56%] Built target prototype__rosidl_typesupport_introspection_c
+[ 67%] Built target prototype__rosidl_typesupport_introspection_cpp
+[ 78%] Built target prototype__rosidl_typesupport_c
+[ 78%] Built target prototype
+[ 80%] Built target prototype__py
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_generator_py[0m
+[ 89%] Built target prototype__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_c__pyext[0m
+[ 92%] Built target prototype__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target prototype__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target prototype__rosidl_typesupport_c__pyext
+running egg_info
+writing prototype.egg-info/PKG-INFO
+writing dependency_links to prototype.egg-info/dependency_links.txt
+writing top-level names to prototype.egg-info/top_level.txt
+reading manifest file 'prototype.egg-info/SOURCES.txt'
+writing manifest file 'prototype.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_prototype_egg

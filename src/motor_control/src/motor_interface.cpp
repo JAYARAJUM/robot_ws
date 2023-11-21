@@ -25,8 +25,8 @@ namespace motor_control
         cfg_.back_right_wheel_name=info_.hardware_parameters["back_right_wheel_name"];
         cfg_.loop_rate=stof(info_.hardware_parameters["loop_rate"]);
         cfg_.baud_rate=stoi(info_.hardware_parameters["baud_rate"]);
-        cfg_.front_arduino=info_.hardware_parameters["front_arduino"];
-        cfg_.back_arduino=info_.hardware_parameters["back_arduino"];
+        //cfg_.front_arduino=info_.hardware_parameters["/dev/serial/by-path/pci-0000:00:14.0-usb-0:1:1.0"];
+        //cfg_.back_arduino=info_.hardware_parameters["/dev/serial/by-path/pci-0000:00:14.0-usb-0:3:1.0"];
         cfg_.timeout=stoi(info_.hardware_parameters["timeout"]);
         cfg_.enc_counts_per_rev=stoi(info_.hardware_parameters["enc_counts_per_rev"]);
 
@@ -37,11 +37,10 @@ namespace motor_control
         r_wheel_front.setup(cfg_.front_right_wheel_name,cfg_.enc_counts_per_rev);
        
         //setup the arduino_1
-        front_arduino.setup(cfg_.front_arduino,cfg_.baud_rate,cfg_.timeout);
+        front_arduino.setup("/dev/serial/by-path/pci-0000:00:14.0-usb-0:1:1.0",cfg_.baud_rate,cfg_.timeout);
         RCLCPP_INFO(rclcpp::get_logger("front_arduino"),"%s,%d",cfg_.front_arduino.c_str(),cfg_.baud_rate);
-        return CallbackReturn::SUCCESS;
-
-        back_arduino.setup(cfg_.back_arduino,cfg_.baud_rate,cfg_.timeout);
+       
+        back_arduino.setup("/dev/serial/by-path/pci-0000:00:14.0-usb-0:3:1.0",cfg_.baud_rate,cfg_.timeout);
         RCLCPP_INFO(rclcpp::get_logger("back_arduino"),"%s,%d",cfg_.back_arduino.c_str(),cfg_.baud_rate);
         return CallbackReturn::SUCCESS;
 
@@ -55,28 +54,25 @@ namespace motor_control
     std::vector<hardware_interface::StateInterface> MotorControl::export_state_interfaces()
     {
         std::vector<hardware_interface::StateInterface> state_interfaces;
-        //state interface for the back left wheel;
+        //state interface for the left wheel;
         state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_back.vel));
 
         state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_back.name,hardware_interface::HW_IF_POSITION,&l_wheel_back.pos));
 
-        //state interface for the back right wheel
+        //state interface for the right wheel
         state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_back.vel));
 
         state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_back.name,hardware_interface::HW_IF_POSITION,&r_wheel_back.pos));
 
-        //state interface for the front left wheel;
+         //state interface for the left wheel;
         state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_front.vel));
 
-        state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_front.pos));
+        state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_front.name,hardware_interface::HW_IF_POSITION,&l_wheel_front.pos));
 
-        //state interfaces for the front right wheel;
+        //state interface for the right wheel
         state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_front.vel));
 
-        state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_front.pos));
-
-
-        //state interface for the front right wheel;
+        state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_front.name,hardware_interface::HW_IF_POSITION,&r_wheel_front.pos));
 
          return state_interfaces;
     }
@@ -89,6 +85,7 @@ namespace motor_control
         command_interfaces.emplace_back(hardware_interface::CommandInterface(r_wheel_back.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_back.cmd));
         command_interfaces.emplace_back(hardware_interface::CommandInterface(l_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&l_wheel_front.cmd));
         command_interfaces.emplace_back(hardware_interface::CommandInterface(r_wheel_front.name,hardware_interface::HW_IF_VELOCITY,&r_wheel_front.cmd));
+
         /*
         if(command_count%200==0)
         {

@@ -370,12 +370,12 @@ void loop() {
   }
   
   // Check to see if we have exceeded the auto-stop interval
-  /*if ((millis() - lastMotorCommand) > AUTO_STOP_INTERVAL) {;
+  if ((millis() - lastMotorCommand) > AUTO_STOP_INTERVAL) {;
    // detachInterrupt(digitalPinToInterrupt(LEFT_ENC_PIN_A));
     //detachInterrupt(digitalPinToInterrupt(RIGHT_ENC_PIN_A));
     setMotorSpeeds(0, 0);
     moving = 0;
-  }*/
+  }
 #endif
 
 // Sweep servos

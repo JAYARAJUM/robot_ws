@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from prototype/action/FoodMenu.action
+// generated code does not contain a copyright notice
+
+
+module prototype {
+  module action {
+    @verbatim (language="comment", text=
+      "Request")
+    struct FoodMenu_Goal {
+      string order;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct FoodMenu_Result {
+      boolean done;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct FoodMenu_Feedback {
+      string waiting;
+    };
+  };
+};

@@ -1,0 +1,80 @@
+[0.047s] Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/prototype': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/prototype -- -j8 -l8
+[0.583s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.584s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.585s] [  3%] Built target ament_cmake_python_symlink_prototype
+[0.585s] running egg_info
+[0.585s] creating prototype.egg-info
+[0.585s] writing prototype.egg-info/PKG-INFO
+[0.585s] writing dependency_links to prototype.egg-info/dependency_links.txt
+[0.586s] writing top-level names to prototype.egg-info/top_level.txt
+[0.586s] writing manifest file 'prototype.egg-info/SOURCES.txt'
+[0.586s] reading manifest file 'prototype.egg-info/SOURCES.txt'
+[0.587s] writing manifest file 'prototype.egg-info/SOURCES.txt'
+[0.618s] [  3%] Built target ament_cmake_python_build_prototype_egg
+[1.488s] [  3%] Built target prototype__cpp
+[1.504s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.504s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.506s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.527s] [ 10%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_c.dir/rosidl_generator_c/prototype/msg/detail/food__functions.c.o[0m
+[1.527s] [ 12%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_c.dir/rosidl_generator_c/prototype/action/detail/food_menu__functions.c.o[0m
+[1.527s] [ 14%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_c.dir/rosidl_generator_c/prototype/action/detail/confirmation__functions.c.o[0m
+[1.530s] [ 16%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_c.dir/rosidl_generator_c/prototype/action/detail/go_to__functions.c.o[0m
+[1.758s] [ 18%] [32m[1mLinking C shared library libprototype__rosidl_generator_c.so[0m
+[1.805s] [ 18%] Built target prototype__rosidl_generator_c
+[1.820s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.823s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.823s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.508s] [ 27%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prototype/action/detail/confirmation__type_support.cpp.o[0m
+[2.508s] [ 27%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prototype/action/detail/food_menu__type_support.cpp.o[0m
+[2.516s] [ 29%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prototype/action/detail/go_to__type_support.cpp.o[0m
+[2.604s] [ 30%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_c.dir/rosidl_typesupport_c/prototype/action/go_to__type_support.cpp.o[0m
+[2.612s] [ 32%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prototype/action/go_to__type_support.cpp.o[0m
+[2.696s] [ 34%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_c.dir/rosidl_typesupport_c/prototype/action/food_menu__type_support.cpp.o[0m
+[2.779s] [ 36%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_c.dir/rosidl_typesupport_c/prototype/action/confirmation__type_support.cpp.o[0m
+[2.874s] [ 38%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_c.dir/rosidl_typesupport_c/prototype/msg/food__type_support.cpp.o[0m
+[2.936s] [ 40%] [32m[1mLinking CXX shared library libprototype__rosidl_typesupport_c.so[0m
+[3.020s] [ 40%] Built target prototype__rosidl_typesupport_c
+[3.047s] [ 41%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prototype/action/food_menu__type_support.cpp.o[0m
+[3.243s] [ 43%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prototype/action/detail/dds_fastrtps/go_to__type_support.cpp.o[0m
+[3.596s] [ 45%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prototype/action/confirmation__type_support.cpp.o[0m
+[3.618s] [ 47%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prototype/action/detail/go_to__type_support.c.o[0m
+[3.735s] [ 49%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prototype/action/detail/food_menu__type_support.c.o[0m
+[3.822s] [ 50%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prototype/msg/detail/food__type_support.cpp.o[0m
+[3.838s] [ 52%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prototype/action/detail/go_to__type_support_c.cpp.o[0m
+[3.846s] [ 54%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prototype/action/detail/confirmation__type_support.c.o[0m
+[3.848s] [ 56%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prototype/msg/food__type_support.cpp.o[0m
+[3.854s] [ 58%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prototype/msg/detail/food__type_support.c.o[0m
+[3.914s] [ 60%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prototype/action/detail/food_menu__type_support_c.cpp.o[0m
+[3.940s] [ 61%] [32m[1mLinking C shared library libprototype__rosidl_typesupport_introspection_c.so[0m
+[4.018s] [ 61%] Built target prototype__rosidl_typesupport_introspection_c
+[4.038s] [ 63%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prototype/action/detail/confirmation__type_support_c.cpp.o[0m
+[4.086s] [ 65%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prototype/msg/detail/food__type_support_c.cpp.o[0m
+[4.370s] [ 67%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prototype/action/detail/dds_fastrtps/food_menu__type_support.cpp.o[0m
+[4.556s] [ 69%] [32m[1mLinking CXX shared library libprototype__rosidl_typesupport_cpp.so[0m
+[4.567s] [ 70%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prototype/action/detail/dds_fastrtps/confirmation__type_support.cpp.o[0m
+[4.616s] [ 72%] [32m[1mLinking CXX shared library libprototype__rosidl_typesupport_introspection_cpp.so[0m
+[4.643s] [ 72%] Built target prototype__rosidl_typesupport_cpp
+[4.659s] [ 74%] [32mBuilding CXX object CMakeFiles/prototype__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prototype/msg/detail/dds_fastrtps/food__type_support.cpp.o[0m
+[4.774s] [ 74%] Built target prototype__rosidl_typesupport_introspection_cpp
+[4.839s] [ 76%] [32m[1mLinking CXX shared library libprototype__rosidl_typesupport_fastrtps_c.so[0m
+[4.959s] [ 76%] Built target prototype__rosidl_typesupport_fastrtps_c
+[5.331s] [ 78%] [32m[1mLinking CXX shared library libprototype__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.414s] [ 78%] Built target prototype__rosidl_typesupport_fastrtps_cpp
+[5.438s] [ 78%] Built target prototype
+[5.460s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.419s] [ 80%] Built target prototype__py
+[7.442s] [ 83%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_py.dir/rosidl_generator_py/prototype/msg/_food_s.c.o[0m
+[7.442s] [ 83%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_py.dir/rosidl_generator_py/prototype/action/_food_menu_s.c.o[0m
+[7.444s] [ 87%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_py.dir/rosidl_generator_py/prototype/action/_go_to_s.c.o[0m
+[7.445s] [ 87%] [32mBuilding C object CMakeFiles/prototype__rosidl_generator_py.dir/rosidl_generator_py/prototype/action/_confirmation_s.c.o[0m
+[7.640s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/prototype/libprototype__rosidl_generator_py.so[0m
+[7.685s] [ 89%] Built target prototype__rosidl_generator_py
+[7.705s] [ 90%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/prototype/_prototype_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.707s] [ 94%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/prototype/_prototype_s.ep.rosidl_typesupport_c.c.o[0m
+[7.707s] [ 94%] [32mBuilding C object CMakeFiles/prototype__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/prototype/_prototype_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.888s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/prototype/prototype_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.891s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/prototype/prototype_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.893s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prototype/prototype_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.935s] [100%] Built target prototype__rosidl_typesupport_introspection_c__pyext
+[7.938s] [100%] Built target prototype__rosidl_typesupport_c__pyext
+[7.943s] [100%] Built target prototype__rosidl_typesupport_fastrtps_c__pyext
