@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root>
+  <!-- Sequence node to handle navigating through poses with replanning and recovery -->
+  <Sequence name="navigate_through_poses_with_replanning_and_recovery">
+    
+    <!-- Define the action to compute a path to the next pose -->
+    <Action name="compute_path_to_pose" type="nav2_compute_path_to_pose_action_bt_node"/>
+    
+    <!-- Define the action to follow the path -->
+    <Action name="follow_path" type="nav2_follow_path_action_bt_node">
+      <Property name="path_topic" value="path"/>
+      <Property name="planner_server" value="planner_server"/>
+      <Property name="controller_server" value="controller_server"/>
+    </Action>
+    
+    <!-- Add a condition to check if the robot is stuck and handle it -->
+    <Fallback name="handle_stuck_or_replan">
+      <Condition name="is_stuck" type="nav2_is_stuck_condition_bt_node"/>
+      <Action name="recovery_action" type="nav2_recovery_node_bt_node"/>
+    </Fallback>
+    
+    <!-- Add a node for replanning if the robot is stuck -->
+    <Action name="replan" type="nav2_planner_selector_bt_node">
+      <Property name="planner_plugins" value="GridBased"/>
+    </Action>
+    
+    <!-- Check if the goal has been reached -->
+    <Condition name="goal_reached" type="nav2_goal_reached_condition_bt_node"/>
+    
+    <!-- If the goal has not been reached, retry -->
+    <Fallback name="retry_if_not_reached">
+      <Condition name="goal_reached"/>
+      <Action name="navigate_to_pose" type="nav2_navigate_to_pose_action_bt_node"/>
+    </Fallback>
+    
+  </Sequence>
+</root>

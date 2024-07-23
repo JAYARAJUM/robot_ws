@@ -1,0 +1,17 @@
+kitchen:
+  confirmed: true
+  canceled: false
+
+table1:
+  confirmed: true
+  canceled: true
+
+table2:
+  confirmed: true
+  canceled: false
+
+table3:
+  confirmed: true
+  canceled: false
+
+all_orders_canceled: false
