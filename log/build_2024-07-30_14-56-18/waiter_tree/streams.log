@@ -1,0 +1,161 @@
+[0.465s] Invoking command in '/home/jayaaraju/waiter_robot_ws/build/waiter_tree': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/build/waiter_tree -- -j8 -l8
+[0.521s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.701s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.709s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.747s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.750s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.756s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.770s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.788s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.867s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.870s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.919s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.107s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[1.107s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.118s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.162s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[1.183s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.272s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[1.304s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.305s] -- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.344s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.405s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.408s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.417s] -- Searching for dependencies of ignition-math6
+[1.419s] -- Looking for OGRE...
+[1.426s] -- Found Ogre Ghadamon (1.9.0)
+[1.427s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.437s] -- Looking for OGRE_Paging...
+[1.437s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.437s] -- Looking for OGRE_Terrain...
+[1.437s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.437s] -- Looking for OGRE_Property...
+[1.438s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.438s] -- Looking for OGRE_RTShaderSystem...
+[1.438s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.438s] -- Looking for OGRE_Volume...
+[1.438s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.438s] -- Looking for OGRE_Overlay...
+[1.438s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.609s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.610s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.610s] -- Searching for dependencies of ignition-transport8
+[1.629s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.642s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.646s] -- Checking for module 'libzmq >= 4'
+[1.666s] --   Found libzmq , version 4.3.4
+[1.707s] -- Checking for module 'uuid'
+[1.720s] --   Found uuid, version 2.37.2
+[1.753s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.754s] -- Searching for dependencies of ignition-msgs5
+[1.773s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.781s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.782s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.782s] -- Searching for dependencies of ignition-common3
+[1.783s] -- Looking for dlfcn.h - found
+[1.783s] -- Looking for libdl - found
+[1.796s] -- Searching for <ignition-common3> component [graphics]
+[1.797s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.798s] -- Searching for dependencies of ignition-common3-graphics
+[1.798s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.800s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.801s] -- Searching for dependencies of ignition-fuel_tools4
+[1.841s] -- Checking for module 'jsoncpp'
+[1.857s] --   Found jsoncpp, version 1.9.5
+[1.901s] -- Checking for module 'libzip'
+[1.913s] --   Found libzip, version 1.7.3
+[1.943s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.943s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.944s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.947s] -- Gazebo version: 11.14
+[1.948s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[2.187s] -- Found gazebo_plugins: 3.7.0 (/opt/ros/humble/share/gazebo_plugins/cmake)
+[2.234s] -- Found hardware_interface: 2.41.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[2.708s] -- Found controller_manager: 2.41.0 (/opt/ros/humble/share/controller_manager/cmake)
+[3.188s] -- Found ros2_control: 2.41.0 (/opt/ros/humble/share/ros2_control/cmake)
+[3.188s] -- Found ros2_controllers: 2.35.0 (/opt/ros/humble/share/ros2_controllers/cmake)
+[3.189s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[3.189s] -- Found gazebo_ros2_control: 0.4.9 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[3.846s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.923s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.923s] -- Added test 'lint_cmake' to check CMake code style
+[3.924s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.925s] -- Added test 'xmllint' to check XML markup files
+[3.927s] -- Configuring done
+[3.936s] -- Generating done
+[3.938s] -- Build files have been written to: /home/jayaaraju/waiter_robot_ws/build/waiter_tree
+[3.983s] Built target ament_cmake_python_symlink_waiter_tree
+[4.281s] running egg_info
+[4.282s] writing waiter_tree.egg-info/PKG-INFO
+[4.282s] writing dependency_links to waiter_tree.egg-info/dependency_links.txt
+[4.282s] writing top-level names to waiter_tree.egg-info/top_level.txt
+[4.284s] reading manifest file 'waiter_tree.egg-info/SOURCES.txt'
+[4.285s] writing manifest file 'waiter_tree.egg-info/SOURCES.txt'
+[4.311s] Built target ament_cmake_python_build_waiter_tree_egg
+[4.322s] Invoked command in '/home/jayaaraju/waiter_robot_ws/build/waiter_tree' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/build/waiter_tree -- -j8 -l8
+[4.347s] Invoking command in '/home/jayaaraju/waiter_robot_ws/build/waiter_tree': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/build/waiter_tree
+[4.354s] -- Install configuration: ""
+[4.354s] -- Execute custom install script
+[4.355s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/config/controller_manager.yaml
+[4.355s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/config/ekf_map.yaml
+[4.355s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/config/gazebo_params.yaml
+[4.356s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/config/joystick.yaml
+[4.356s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/config/ros2_control.yaml
+[4.356s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/config/twist_mux.yaml
+[4.357s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/src/__init__.py
+[4.357s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/waiter_tree/__init__.py
+[4.357s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/waiter_tree/confirmations.yaml
+[4.357s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/waiter_tree/order_detected.yaml
+[4.358s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/waiter_tree/order_detection_node.py
+[4.358s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/worlds/hotel_world.world
+[4.358s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/camera.xacro
+[4.359s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/gazebo_control.xacro
+[4.359s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/inertial_macros.xacro
+[4.359s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/lidar.xacro
+[4.360s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/nav_test.gazebo.xacro
+[4.360s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/robot_core.xacro
+[4.360s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/robot_urdf.xacro
+[4.360s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/urdf/ros2_control.xacro
+[4.361s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/launch/joystick_launch.py
+[4.361s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/launch/rsp_launch.py
+[4.361s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/launch/rviz2_launch.py
+[4.361s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/launch/simulation_launch.py
+[4.362s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/launch/waiter_tree_launch.py
+[4.362s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/scripts/motor_controller.py
+[4.362s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/scripts/waiter_robot_bt.py
+[4.363s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/environment/pythonpath.sh
+[4.363s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/environment/pythonpath.dsv
+[4.363s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/PKG-INFO
+[4.364s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.364s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.364s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree-0.0.0-py3.10.egg-info/top_level.txt
+[4.365s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/__init__.py
+[4.365s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/confirmations.yaml
+[4.365s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/order_detected.yaml
+[4.365s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/order_detection_node.py
+[4.366s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/lib/waiter_tree/waiter_robot_bt.py
+[4.366s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/lib/waiter_tree/motor_controller.py
+[4.366s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/ament_index/resource_index/package_run_dependencies/waiter_tree
+[4.366s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/ament_index/resource_index/parent_prefix_path/waiter_tree
+[4.367s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/environment/ament_prefix_path.sh
+[4.367s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/environment/ament_prefix_path.dsv
+[4.367s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/environment/path.sh
+[4.368s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/environment/path.dsv
+[4.368s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/local_setup.bash
+[4.368s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/local_setup.sh
+[4.368s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/local_setup.zsh
+[4.369s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/local_setup.dsv
+[4.369s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/package.dsv
+[4.378s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/ament_index/resource_index/packages/waiter_tree
+[4.378s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/cmake/waiter_treeConfig.cmake
+[4.378s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/cmake/waiter_treeConfig-version.cmake
+[4.379s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/waiter_tree/share/waiter_tree/package.xml
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/build'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/install'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/log'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/log/build_2024-07-23_00-35-50'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/log/build_2024-07-23_00-36-03'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/log/latest'...
+[4.422s] Listing '/home/jayaaraju/waiter_robot_ws/install/waiter_tree/local/lib/python3.10/dist-packages/waiter_tree/log/latest_build'...
+[4.428s] Invoked command in '/home/jayaaraju/waiter_robot_ws/build/waiter_tree' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/build/waiter_tree

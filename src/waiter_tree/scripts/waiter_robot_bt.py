@@ -22,7 +22,7 @@ import time
 
 
 # Specify the path to your YAML file
-YAML_PATH = os.path.join(os.path.dirname(__file__), '/home/jayaaraju/ros_project_ws/src/waiter_tree/waiter_tree/confirmations.yaml')
+YAML_PATH = os.path.join(os.path.dirname(__file__), '/home/jayaaraju/waiter_robot_ws/src/waiter_tree/waiter_tree/confirmations.yaml')
 
 class NavigationBridge(Node):
     def __init__(self):
@@ -66,13 +66,13 @@ def load_confirmations(yaml_path):
     try:
         with open(yaml_path, 'r') as file:
             confirmations = yaml.safe_load(file)
-            #print(f"Loaded confirmations: {confirmations}")  #
+            print(f"Loaded confirmations: {confirmations}")  
             return confirmations
     except FileNotFoundError:
-        #print(f"YAML file not found at {yaml_path}")  
+        print(f"YAML file not found at {yaml_path}")  
         return {}
     except yaml.YAMLError as e:
-        #print(f"Error parsing YAML file: {e}")  # Debug print
+        print(f"Error parsing YAML file: {e}")  
         return {}
 class Delay(py_trees.behaviour.Behaviour):
     def __init__(self, name, delay_time):

@@ -1,0 +1,36 @@
+[7.886s] Invoking command in '/home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials': PYTHONPATH=/home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials/build --no-deps symlink_data
+[8.047s] /home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials/setup.py:5: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+[8.047s]   from distutils import log
+[10.839s] running develop
+[13.336s] redirecting scripts
+[13.338s]   from: /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/bin
+[13.339s]     to: /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.340s] running egg_info
+[13.343s] writing py_trees_ros_tutorials.egg-info/PKG-INFO
+[13.347s] writing dependency_links to py_trees_ros_tutorials.egg-info/dependency_links.txt
+[13.352s] writing entry points to py_trees_ros_tutorials.egg-info/entry_points.txt
+[13.355s] writing top-level names to py_trees_ros_tutorials.egg-info/top_level.txt
+[13.377s] reading manifest file 'py_trees_ros_tutorials.egg-info/SOURCES.txt'
+[13.397s] writing manifest file 'py_trees_ros_tutorials.egg-info/SOURCES.txt'
+[13.413s] running build_ext
+[13.416s] Creating /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/python3.10/site-packages/py-trees-ros-tutorials.egg-link (link to .)
+[13.430s] Installing mock-battery script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.430s] Installing mock-dashboard script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.431s] Installing mock-dock-client script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.433s] Installing mock-docking-controller script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.434s] Installing mock-led-strip script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.436s] Installing mock-move-base script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.439s] Installing mock-move-base-client script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.441s] Installing mock-rotate-client script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.443s] Installing mock-rotation-controller script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.448s] Installing mock-safety-sensors script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.451s] Installing tree-action-clients script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.454s] Installing tree-battery-check script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.455s] Installing tree-context-switching script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.455s] Installing tree-data-gathering script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.456s] Installing tree-docking-cancelling-failing script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.456s] Installing tree-dynamic-application-loading script to /home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/py_trees_ros_tutorials
+[13.457s] 
+[13.462s] Installed /home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials
+[13.463s] running symlink_data
+[13.695s] Invoked command in '/home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials' returned '0': PYTHONPATH=/home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jayaaraju/waiter_robot_ws/build/py_trees_ros_tutorials/build --no-deps symlink_data
