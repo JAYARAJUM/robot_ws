@@ -1,0 +1,4 @@
+/home/jayaaraju/waiter_robot_ws/build/prototype/rosidl_adapter/prototype:action/GoTo.idl
+/home/jayaaraju/waiter_robot_ws/build/prototype/rosidl_adapter/prototype:action/FoodMenu.idl
+/home/jayaaraju/waiter_robot_ws/build/prototype/rosidl_adapter/prototype:action/Confirmation.idl
+/home/jayaaraju/waiter_robot_ws/build/prototype/rosidl_adapter/prototype:msg/Food.idl

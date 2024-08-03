@@ -1,0 +1,9 @@
+{
+  "package_name": "prototype",
+  "non_idl_tuples": [
+    "/home/jayaaraju/waiter_robot_ws/src/prototype:action/GoTo.action",
+    "/home/jayaaraju/waiter_robot_ws/src/prototype:action/FoodMenu.action",
+    "/home/jayaaraju/waiter_robot_ws/src/prototype:action/Confirmation.action",
+    "/home/jayaaraju/waiter_robot_ws/src/prototype:msg/Food.msg"
+  ]
+}

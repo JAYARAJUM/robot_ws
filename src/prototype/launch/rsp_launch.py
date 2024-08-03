@@ -11,6 +11,7 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     package_name = 'prototype'
     
+    
     # Check if we're told to use sim time
     use_sim_time = LaunchConfiguration('use_sim_time')
 
@@ -29,8 +30,12 @@ def generate_launch_description():
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        output='screen',
-        parameters=[robot_description, {'use_sim_time': True}]
+        name='my_robot_state_publisher_node',
+        emulate_tty=True,
+        parameters=[{'use_sim_time':True,
+                     'publish_frequency':50.0,
+        'robot_description':Command(['xacro ',xacro_file])}],
+        output="screen"
     )
 
     joint_state_publisher_gui = Node(
@@ -49,4 +54,3 @@ def generate_launch_description():
         node_robot_state_publisher,
         joint_state_publisher_gui
     ])
-

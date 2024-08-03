@@ -1,0 +1,1 @@
+/home/jayaaraju/waiter_robot_ws/build/prototype/rosidl_typesupport_fastrtps_c/prototype/msg/detail/food__rosidl_typesupport_fastrtps_c.h

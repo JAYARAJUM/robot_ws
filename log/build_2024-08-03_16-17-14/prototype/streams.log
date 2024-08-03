@@ -1,0 +1,220 @@
+[0.018s] Invoking command in '/home/jayaaraju/waiter_robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/waiter_robot_ws/install/motor_control:/home/jayaaraju/bt_demo/install/simple_bt:/home/jayaaraju/bt_demo/install/behaviortree_cpp:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/prototype/prototype/install/serial_driver:/home/jayaaraju/prototype/prototype/install/prototype:/home/jayaaraju/prototype/prototype/install/motor_control:/home/jayaaraju/prototype/prototype/install/io_context:/home/jayaaraju/prototype/prototype/install/asio_cmake_module:/home/jayaaraju/led_ws/install/led_node /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/build/prototype -- -j8 -l8
+[0.050s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.209s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.218s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[0.218s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[0.248s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.251s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.258s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.271s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.306s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.371s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.832s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.287s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.472s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.502s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.531s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.531s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.531s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.589s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.599s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.601s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.602s] -- Added test 'lint_cmake' to check CMake code style
+[1.602s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.603s] -- Added test 'xmllint' to check XML markup files
+[1.606s] -- Configuring done
+[1.647s] -- Generating done
+[1.651s] -- Build files have been written to: /home/jayaaraju/waiter_robot_ws/build/prototype
+[1.686s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_generator_c[0m
+[1.699s] [  1%] Built target prototype__cpp
+[1.704s] [ 12%] Built target prototype__rosidl_generator_c
+[1.713s] [ 12%] Built target ament_cmake_python_symlink_prototype
+[1.718s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_fastrtps_cpp[0m
+[1.720s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_cpp[0m
+[1.721s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_introspection_cpp[0m
+[1.724s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_c[0m
+[1.725s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_fastrtps_c[0m
+[1.726s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_introspection_c[0m
+[1.749s] [ 23%] Built target prototype__rosidl_typesupport_c
+[1.751s] [ 38%] Built target prototype__rosidl_typesupport_cpp
+[1.751s] [ 45%] Built target prototype__rosidl_typesupport_fastrtps_cpp
+[1.752s] [ 56%] Built target prototype__rosidl_typesupport_introspection_c
+[1.755s] [ 67%] Built target prototype__rosidl_typesupport_introspection_cpp
+[1.755s] [ 78%] Built target prototype__rosidl_typesupport_fastrtps_c
+[1.786s] [ 78%] Built target prototype
+[1.813s] [ 80%] Built target prototype__py
+[1.828s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_generator_py[0m
+[1.849s] [ 89%] Built target prototype__rosidl_generator_py
+[1.863s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.863s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_c__pyext[0m
+[1.863s] [35m[1mConsolidate compiler generated dependencies of target prototype__rosidl_typesupport_introspection_c__pyext[0m
+[1.881s] [ 92%] Built target prototype__rosidl_typesupport_fastrtps_c__pyext
+[1.882s] [100%] Built target prototype__rosidl_typesupport_introspection_c__pyext
+[1.882s] [100%] Built target prototype__rosidl_typesupport_c__pyext
+[2.107s] running egg_info
+[2.108s] writing prototype.egg-info/PKG-INFO
+[2.109s] writing dependency_links to prototype.egg-info/dependency_links.txt
+[2.109s] writing top-level names to prototype.egg-info/top_level.txt
+[2.111s] reading manifest file 'prototype.egg-info/SOURCES.txt'
+[2.112s] writing manifest file 'prototype.egg-info/SOURCES.txt'
+[2.158s] [100%] Built target ament_cmake_python_build_prototype_egg
+[2.175s] Invoked command in '/home/jayaaraju/waiter_robot_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/waiter_robot_ws/install/motor_control:/home/jayaaraju/bt_demo/install/simple_bt:/home/jayaaraju/bt_demo/install/behaviortree_cpp:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/prototype/prototype/install/serial_driver:/home/jayaaraju/prototype/prototype/install/prototype:/home/jayaaraju/prototype/prototype/install/motor_control:/home/jayaaraju/prototype/prototype/install/io_context:/home/jayaaraju/prototype/prototype/install/asio_cmake_module:/home/jayaaraju/led_ws/install/led_node /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/build/prototype -- -j8 -l8
+[2.378s] Invoking command in '/home/jayaaraju/waiter_robot_ws/build/prototype': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/waiter_robot_ws/install/motor_control:/home/jayaaraju/bt_demo/install/simple_bt:/home/jayaaraju/bt_demo/install/behaviortree_cpp:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/prototype/prototype/install/serial_driver:/home/jayaaraju/prototype/prototype/install/prototype:/home/jayaaraju/prototype/prototype/install/motor_control:/home/jayaaraju/prototype/prototype/install/io_context:/home/jayaaraju/prototype/prototype/install/asio_cmake_module:/home/jayaaraju/led_ws/install/led_node /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/build/prototype
+[2.390s] -- Install configuration: ""
+[2.390s] -- Execute custom install script
+[2.391s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//urdf/camera.xacro
+[2.404s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//urdf/joint_macros.xacro
+[2.418s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//urdf/lidar.xacro
+[2.431s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//urdf/robot_core.xacro
+[2.444s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//urdf/sattava_main.xacro
+[2.455s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//urdf/wheel.xacro
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//launch/rsp_launch.py
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//action/Confirmation.action
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//action/FoodMenu.action
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//action/GoTo.action
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//action/singlemo.pdf
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//msg/DistanceAngle.msg
+[2.467s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype//msg/Food.msg
+[2.468s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/ament_index/resource_index/rosidl_interfaces/prototype
+[2.468s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/confirmation.h
+[2.468s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__functions.h
+[2.468s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__struct.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__type_support.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__functions.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__struct.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__type_support.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__functions.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__struct.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__type_support.h
+[2.469s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/food_menu.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/go_to.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__functions.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__struct.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__type_support.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/food.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/rosidl_generator_c__visibility_control.h
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/library_path.sh
+[2.470s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/library_path.dsv
+[2.471s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__rosidl_typesupport_fastrtps_c.h
+[2.471s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__rosidl_typesupport_fastrtps_c.h
+[2.471s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__rosidl_typesupport_fastrtps_c.h
+[2.471s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__rosidl_typesupport_fastrtps_c.h
+[2.472s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.472s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/confirmation.hpp
+[2.472s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__builder.hpp
+[2.472s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__struct.hpp
+[2.472s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__traits.hpp
+[2.472s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__builder.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__struct.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__traits.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__builder.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__struct.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__traits.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/food_menu.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/go_to.hpp
+[2.473s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__builder.hpp
+[2.474s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__struct.hpp
+[2.474s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__traits.hpp
+[2.474s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/food.hpp
+[2.474s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__rosidl_typesupport_fastrtps_cpp.hpp
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__rosidl_typesupport_fastrtps_cpp.hpp
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__rosidl_typesupport_fastrtps_cpp.hpp
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__rosidl_typesupport_fastrtps_cpp.hpp
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__rosidl_typesupport_introspection_c.h
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__rosidl_typesupport_introspection_c.h
+[2.475s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__rosidl_typesupport_introspection_c.h
+[2.476s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__rosidl_typesupport_introspection_c.h
+[2.476s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.476s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/confirmation__rosidl_typesupport_introspection_cpp.hpp
+[2.476s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/food_menu__rosidl_typesupport_introspection_cpp.hpp
+[2.476s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/action/detail/go_to__rosidl_typesupport_introspection_cpp.hpp
+[2.476s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/include/prototype/prototype/msg/detail/food__rosidl_typesupport_introspection_cpp.hpp
+[2.477s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/pythonpath.sh
+[2.477s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/pythonpath.dsv
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype-0.0.0-py3.10.egg-info/PKG-INFO
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype-0.0.0-py3.10.egg-info/top_level.txt
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/__init__.py
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/_prototype_s.ep.rosidl_typesupport_c.c
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/_prototype_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/_prototype_s.ep.rosidl_typesupport_introspection_c.c
+[2.478s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/__init__.py
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/_confirmation.py
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/_confirmation_s.c
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/_food_menu.py
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/_food_menu_s.c
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/_go_to.py
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action/_go_to_s.c
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/libprototype__rosidl_generator_py.so
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/msg/__init__.py
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/msg/_food.py
+[2.479s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/msg/_food_s.c
+[2.480s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/prototype_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.480s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/prototype_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.480s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/prototype_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.480s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/prototype_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.480s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/prototype_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.480s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/prototype_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.481s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/action/GoTo.idl
+[2.481s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/action/FoodMenu.idl
+[2.481s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/action/Confirmation.idl
+[2.481s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/msg/Food.idl
+[2.481s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/action/GoTo.action
+[2.481s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/action/FoodMenu.action
+[2.482s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/action/Confirmation.action
+[2.482s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/msg/Food.msg
+[2.482s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/ament_index/resource_index/package_run_dependencies/prototype
+[2.482s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/ament_index/resource_index/parent_prefix_path/prototype
+[2.482s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/ament_prefix_path.sh
+[2.482s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/ament_prefix_path.dsv
+[2.483s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/path.sh
+[2.483s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/environment/path.dsv
+[2.483s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/local_setup.bash
+[2.483s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/local_setup.sh
+[2.483s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/local_setup.zsh
+[2.483s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/local_setup.dsv
+[2.483s] -- Symlinking: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/package.dsv
+[2.494s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/ament_index/resource_index/packages/prototype
+[2.494s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/rosidl_cmake-extras.cmake
+[2.494s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.494s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.494s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/ament_cmake_export_libraries-extras.cmake
+[2.494s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/ament_cmake_export_targets-extras.cmake
+[2.495s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.495s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.495s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototypeConfig.cmake
+[2.495s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototypeConfig-version.cmake
+[2.495s] -- Up-to-date symlink: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/package.xml
+[2.495s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_generator_c.so
+[2.495s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_typesupport_fastrtps_c.so
+[2.496s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_typesupport_fastrtps_cpp.so
+[2.496s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_typesupport_introspection_c.so
+[2.496s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_typesupport_c.so
+[2.496s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_typesupport_introspection_cpp.so
+[2.497s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_typesupport_cpp.so
+[2.543s] Listing '/home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype'...
+[2.543s] Compiling '/home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/__init__.py'...
+[2.543s] Listing '/home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/action'...
+[2.543s] Listing '/home/jayaaraju/waiter_robot_ws/install/prototype/local/lib/python3.10/dist-packages/prototype/msg'...
+[2.547s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/lib/libprototype__rosidl_generator_py.so
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_generator_cExport.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_generator_cExport-noconfig.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_typesupport_fastrtps_cExport.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_generator_cppExport.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.548s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_introspection_cExport.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_cExport.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_cExport-noconfig.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_introspection_cppExport.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_cppExport.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/prototype__rosidl_typesupport_cppExport-noconfig.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_generator_pyExport.cmake
+[2.549s] -- Up-to-date: /home/jayaaraju/waiter_robot_ws/install/prototype/share/prototype/cmake/export_prototype__rosidl_generator_pyExport-noconfig.cmake
+[2.552s] Invoked command in '/home/jayaaraju/waiter_robot_ws/build/prototype' returned '0': CMAKE_PREFIX_PATH=/home/jayaaraju/waiter_robot_ws/install/waiter_tree:/home/jayaaraju/waiter_robot_ws/install/ros2_mapping:/home/jayaaraju/waiter_robot_ws/install/prototype:/home/jayaaraju/waiter_robot_ws/install/navigator_planner:/home/jayaaraju/waiter_robot_ws/install/motor_control:/home/jayaaraju/bt_demo/install/simple_bt:/home/jayaaraju/bt_demo/install/behaviortree_cpp:/home/jayaaraju/code_ws/install/udemy:/home/jayaaraju/nav_ws/install/sattva_bot:/home/jayaaraju/nav_ws/install/ros2_mapping:/home/jayaaraju/nav_ws/install/opennav_docking:/home/jayaaraju/proto_ws/install/sattva_bot:/home/jayaaraju/proto_ws/install/prototype:/home/jayaaraju/proto_ws/install/pallet_loader:/home/jayaaraju/waiter_robot_ws/install/py_trees_ros_tutorials:/home/jayaaraju/ros2_ws/install/my_robot_controller:/home/jayaaraju/ros2_ws/src/install/my_robot_controller:/home/jayaaraju/pallet_ws/install/yolov5_ros:/opt/ros/humble:/home/jayaaraju/pallet_ws/install/serial:/home/jayaaraju/pallet_ws/install/pallet_loader:/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs:/home/jayaaraju/main_ws/install/two_wheeled_robot:/home/jayaaraju/main_ws/install/sllidar_ros2:/home/jayaaraju/main_ws/install/ros2_control_test_assets:/home/jayaaraju/main_ws/install/ros2_control_demo_description:/home/jayaaraju/main_ws/install/my_own_robot:/home/jayaaraju/prototype/prototype/install/serial_driver:/home/jayaaraju/prototype/prototype/install/prototype:/home/jayaaraju/prototype/prototype/install/motor_control:/home/jayaaraju/prototype/prototype/install/io_context:/home/jayaaraju/prototype/prototype/install/asio_cmake_module:/home/jayaaraju/led_ws/install/led_node /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/build/prototype
