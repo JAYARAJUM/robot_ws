@@ -1,2 +1,0 @@
-Invoking command in '/home/jayaaraju/waiter_robot_ws/build/serial': /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/serial_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/install/serial
-Invoked command in '/home/jayaaraju/waiter_robot_ws/build/serial' returned '1': /usr/bin/cmake /home/jayaaraju/waiter_robot_ws/src/serial_driver -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jayaaraju/waiter_robot_ws/install/serial

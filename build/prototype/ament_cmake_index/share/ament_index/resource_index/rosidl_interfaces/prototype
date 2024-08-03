@@ -1,8 +1,0 @@
-action/Confirmation.action
-action/Confirmation.idl
-action/FoodMenu.action
-action/FoodMenu.idl
-action/GoTo.action
-action/GoTo.idl
-msg/Food.idl
-msg/Food.msg

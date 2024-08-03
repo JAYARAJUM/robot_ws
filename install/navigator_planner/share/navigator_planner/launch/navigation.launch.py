@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/navigator_planner/launch/navigation.launch.py

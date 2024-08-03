@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/prototype/launch/rsp_launch.py

@@ -1,7 +1,0 @@
-setup.py
-waiter_tree/__init__.py
-waiter_tree/order_detection_node.py
-waiter_tree.egg-info/PKG-INFO
-waiter_tree.egg-info/SOURCES.txt
-waiter_tree.egg-info/dependency_links.txt
-waiter_tree.egg-info/top_level.txt
