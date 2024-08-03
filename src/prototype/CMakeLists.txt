@@ -14,6 +14,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 install(
   DIRECTORY
+    urdf
+    launch
     action
     msg
   DESTINATION
