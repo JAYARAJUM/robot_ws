@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/build/prototype/rosidl_typesupport_introspection_c/prototype/action/detail/confirmation__rosidl_typesupport_introspection_c.h

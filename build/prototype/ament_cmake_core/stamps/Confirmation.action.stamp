@@ -1,5 +1,0 @@
-# Confirmation.action
-string location  # 'kitchen' or 'table1', 'table2', 'table3'
----
-bool confirmed
----

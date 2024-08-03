@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jayaaraju/code_ws/install/udemy/include/**",
+        "/home/jayaaraju/nav_ws/install/opennav_docking/include/**",
+        "/home/jayaaraju/main_ws/install/ros2_control_test_assets/include/**",
+        "/home/jayaaraju/proto_ws/install/prototype/include/**",
+        "/home/jayaaraju/proto_ws/install/pallet_loader/include/**",
+        "/home/jayaaraju/pallet_ws/install/pallet_loader/include/**",
+        "/home/jayaaraju/pallet_ws/install/bboxes_ex_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/jayaaraju/waiter_robot_ws/src/navigator_planner/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
