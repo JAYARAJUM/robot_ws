@@ -1,6 +1,13 @@
 #include "encoder_driver.h"
 
-volatile long encoderCounts[] = {0, 0, 0, 0};
+volatile long front_left_pos=0L;
+volatile long front_roght_pos=0L;
+volatile long rear_left_pos=0L;
+volatile long rear_right_pos=0L;
+
+long positionLeft = -999;
+
+static const int8_t ENC_STATES [] = {0,1,-1,0,-1,0,0,1,1,0,0,-1,0,-1,1,0}
 
 void initEncoders() {
   pinMode(FRONT_LEFT_ENC_A, INPUT_PULLUP);
@@ -17,6 +24,14 @@ void initEncoders() {
   attachInterrupt(digitalPinToInterrupt(REAR_LEFT_ENC_A), rearLeftEncoderISR, CHANGE);
   attachInterrupt(digitalPinToInterrupt(REAR_RIGHT_ENC_A), rearRightEncoderISR, CHANGE);
 }
+
+ //Imterrupt routine for LEFT encoder, taking care of actual counting
+ ISR (PCINT2_vect){
+      static uint8_t enc_last=0;
+      enc_last <<=2;
+      enc_last |= (PIND &(3 << 2)) >>2;
+      front_left_pos
+ }
 
 long readEncoder(int i) {
   return encoderCounts[i];

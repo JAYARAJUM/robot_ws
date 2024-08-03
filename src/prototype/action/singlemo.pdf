@@ -1,0 +1,167 @@
+// Single File Motor Control with PID
+// Combines motor driver, encoder driver, and PID controller into one Arduino sketch
+
+#include <Arduino.h>
+
+// Pin Definitions
+#define MOTOR_PIN_PWM 9
+#define MOTOR_PIN_DIR1 7
+#define MOTOR_PIN_DIR2 8
+#define ENCODER_PIN_A 2
+#define ENCODER_PIN_B 3
+
+#define SERIAL_BAUD 115200
+#define PID_INTERVAL 50 // 50ms = 20Hz PID update rate
+
+// Motor Driver Class
+class MotorDriver {
+public:
+  MotorDriver(int pwmPin, int dir1Pin, int dir2Pin)
+    : _pwmPin(pwmPin), _dir1Pin(dir1Pin), _dir2Pin(dir2Pin) {}
+
+  void init() {
+    pinMode(_pwmPin, OUTPUT);
+    pinMode(_dir1Pin, OUTPUT);
+    pinMode(_dir2Pin, OUTPUT);
+  }
+
+  void setSpeed(int speed) {
+    speed = constrain(speed, -255, 255);
+    if (speed >= 0) {
+      digitalWrite(_dir1Pin, HIGH);
+      digitalWrite(_dir2Pin, LOW);
+    } else {
+      digitalWrite(_dir1Pin, LOW);
+      digitalWrite(_dir2Pin, HIGH);
+      speed = -speed;
+    }
+    analogWrite(_pwmPin, speed);
+  }
+
+private:
+  int _pwmPin;
+  int _dir1Pin;
+  int _dir2Pin;
+};
+
+// Encoder Driver Class
+class EncoderDriver {
+public:
+  EncoderDriver(int pinA, int pinB) : _pinA(pinA), _pinB(pinB), _count(0) {
+    instance = this;
+  }
+
+  void init() {
+    pinMode(_pinA, INPUT_PULLUP);
+    pinMode(_pinB, INPUT_PULLUP);
+    attachInterrupt(digitalPinToInterrupt(_pinA), isrStatic, CHANGE);
+  }
+
+  long read() {
+    return _count;
+  }
+
+  void write(long value) {
+    _count = value;
+  }
+
+private:
+  int _pinA;
+  int _pinB;
+  volatile long _count;
+  static EncoderDriver* instance;
+
+  static void isrStatic() {
+    if (instance) {
+      instance->handleInterrupt();
+    }
+  }
+
+  void handleInterrupt() {
+    if (digitalRead(_pinA) == digitalRead(_pinB)) {
+      _count++;
+    } else {
+      _count--;
+    }
+  }
+};
+
+EncoderDriver* EncoderDriver::instance = nullptr;
+
+// PID Controller Class
+class PIDController {
+public:
+  PIDController(float kp, float ki, float kd)
+    : _kp(kp), _ki(ki), _kd(kd), _lastError(0), _integral(0), _minOutput(-255), _maxOutput(255) {}
+
+  int compute(long setpoint, long input) {
+    long error = setpoint - input;
+    _integral += error;
+    long derivative = error - _lastError;
+    
+    long output = _kp * error + _ki * _integral + _kd * derivative;
+    
+    if (output > _maxOutput) {
+      output = _maxOutput;
+    } else if (output < _minOutput) {
+      output = _minOutput;
+    }
+    
+    _lastError = error;
+    return output;
+  }
+
+  void setOutputLimits(int min, int max) {
+    _minOutput = min;
+    _maxOutput = max;
+  }
+
+private:
+  float _kp, _ki, _kd;
+  long _lastError;
+  long _integral;
+  int _minOutput, _maxOutput;
+};
+
+// Global objects
+MotorDriver motor(MOTOR_PIN_PWM, MOTOR_PIN_DIR1, MOTOR_PIN_DIR2);
+EncoderDriver encoder(ENCODER_PIN_A, ENCODER_PIN_B);
+PIDController pid(1.0, 0.1, 0.05); // Starting values for Kp, Ki, Kd
+
+unsigned long lastPIDUpdate = 0;
+long targetPosition = 0;
+
+void setup() {
+  Serial.begin(SERIAL_BAUD);
+  motor.init();
+  encoder.init();
+  pid.setOutputLimits(-255, 255);
+  Serial.println("Motor Control System Initialized");
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    targetPosition = Serial.parseInt();
+    Serial.print("New target position: ");
+    Serial.println(targetPosition);
+  }
+
+  unsigned long currentTime = millis();
+  if (currentTime - lastPIDUpdate >= PID_INTERVAL) {
+    lastPIDUpdate = currentTime;
+    updatePID();
+  }
+}
+
+void updatePID() {
+  long currentPosition = encoder.read();
+  int output = pid.compute(targetPosition, currentPosition);
+  motor.setSpeed(output);
+
+  Serial.print("Target: ");
+  Serial.print(targetPosition);
+  Serial.print(" Current: ");
+  Serial.print(currentPosition);
+  Serial.print(" Output: ");
+  Serial.println(output);
+}

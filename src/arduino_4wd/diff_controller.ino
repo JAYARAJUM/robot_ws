@@ -40,16 +40,13 @@ void doPID(SetPointInfo * p) {
   input = p->Encoder - p->PrevEnc;
   Perror = p->TargetTicksPerFrame - input;
 
-  output = (Kp * Perror - Kd * (input - p->PrevInput) + p->ITerm) / Ko;
+  output = (Kp * Perror - Kd * (input - p->PrevInput) + p->ITerm);
   p->PrevEnc = p->Encoder;
 
-  output += p->output;
-  if (output >= MAX_PWM)
-    output = MAX_PWM;
-  else if (output <= -MAX_PWM)
-    output = -MAX_PWM;
-  else
-    p->ITerm += Ki * Perror;
+  output = constrain(output, -255, 255);
+
+  p->ITerm += Ki * Perror;
+  p->ITerm = constrain(p->ITerm, -255, 255);
 
   p->output = output;
   p->PrevInput = input;

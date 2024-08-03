@@ -3,7 +3,7 @@ kitchen:
   canceled: false
 
 table1:
-  confirmed: true
+  confirmed: false
   canceled: true
 
 table2:

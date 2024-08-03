@@ -1,64 +1,86 @@
 #include "motor_driver.h"
+#include "commands.h"
 
-#define MOTOR1_PWM 4
-#define MOTOR1_DIR 5
-#define MOTOR2_PWM 6
-#define MOTOR2_DIR 7
-#define MOTOR3_PWM 8
-#define MOTOR3_DIR 9
-#define MOTOR4_PWM 10
-#define MOTOR4_DIR 11
+// Motor 1 - Front Left
+#define MOTOR1_ENABLE 4
+#define MOTOR1_IN1 5
+#define MOTOR1_IN2 6
+
+// Motor 2 - Front Right
+#define MOTOR2_ENABLE 7
+#define MOTOR2_IN1 8
+#define MOTOR2_IN2 9
+
+// Motor 3 - Rear Left
+#define MOTOR3_ENABLE 10
+#define MOTOR3_IN1 11
+#define MOTOR3_IN2 12
+
+// Motor 4 - Rear Right
+#define MOTOR4_ENABLE 13
+#define MOTOR4_IN1 14
+#define MOTOR4_IN2 15
 
 void initMotorController() {
-  pinMode(MOTOR1_PWM, OUTPUT);
-  pinMode(MOTOR1_DIR, OUTPUT);
-  pinMode(MOTOR2_PWM, OUTPUT);
-  pinMode(MOTOR2_DIR, OUTPUT);
-  pinMode(MOTOR3_PWM, OUTPUT);
-  pinMode(MOTOR3_DIR, OUTPUT);
-  pinMode(MOTOR4_PWM, OUTPUT);
-  pinMode(MOTOR4_DIR, OUTPUT);
+  // Set all the motor control pins to outputs
+  pinMode(MOTOR1_ENABLE, OUTPUT);
+  pinMode(MOTOR1_IN1, OUTPUT);
+  pinMode(MOTOR1_IN2, OUTPUT);
+  pinMode(MOTOR2_ENABLE, OUTPUT);
+  pinMode(MOTOR2_IN1, OUTPUT);
+  pinMode(MOTOR2_IN2, OUTPUT);
+  pinMode(MOTOR3_ENABLE, OUTPUT);
+  pinMode(MOTOR3_IN1, OUTPUT);
+  pinMode(MOTOR3_IN2, OUTPUT);
+  pinMode(MOTOR4_ENABLE, OUTPUT);
+  pinMode(MOTOR4_IN1, OUTPUT);
+  pinMode(MOTOR4_IN2, OUTPUT);
 }
 
 void setMotorSpeed(int i, int spd) {
-  unsigned char reverse = 0;
-
-  if (spd < 0)
-  {
-    spd = -spd;
-    reverse = 1;
-  }
-  if (spd > 255)
-    spd = 255;
+  int enable_pin, in1_pin, in2_pin;
   
-  if (i == FRONT_LEFT) {
-    if (reverse)
-      digitalWrite(MOTOR1_DIR, HIGH);
-    else
-      digitalWrite(MOTOR1_DIR, LOW);
-    analogWrite(MOTOR1_PWM, spd);
+  // Determine which motor we're setting
+  switch(i) {
+    case FRONT_LEFT:
+      enable_pin = MOTOR1_ENABLE;
+      in1_pin = MOTOR1_IN1;
+      in2_pin = MOTOR1_IN2;
+      break;
+    case FRONT_RIGHT:
+      enable_pin = MOTOR2_ENABLE;
+      in1_pin = MOTOR2_IN1;
+      in2_pin = MOTOR2_IN2;
+      break;
+    case REAR_LEFT:
+      enable_pin = MOTOR3_ENABLE;
+      in1_pin = MOTOR3_IN1;
+      in2_pin = MOTOR3_IN2;
+      break;
+    case REAR_RIGHT:
+      enable_pin = MOTOR4_ENABLE;
+      in1_pin = MOTOR4_IN1;
+      in2_pin = MOTOR4_IN2;
+      break;
+    default:
+      return; // Invalid motor
   }
-  else if (i == FRONT_RIGHT) {
-    if (reverse)
-      digitalWrite(MOTOR2_DIR, HIGH);
-    else
-      digitalWrite(MOTOR2_DIR, LOW);
-    analogWrite(MOTOR2_PWM, spd);
+
+  // Ensure the speed is within bounds
+  spd = constrain(spd, -255, 255);
+
+  // Set the motor direction
+  if (spd >= 0) {
+    digitalWrite(in1_pin, HIGH);
+    digitalWrite(in2_pin, LOW);
+  } else {
+    digitalWrite(in1_pin, LOW);
+    digitalWrite(in2_pin, HIGH);
+    spd = -spd; // Make speed positive for PWM
   }
-  else if (i == REAR_LEFT) {
-    if (reverse)
-      digitalWrite(MOTOR3_DIR, HIGH);
-    else
-      digitalWrite(MOTOR3_DIR, LOW);
-    analogWrite(MOTOR3_PWM, spd);
-  }
-  else if (i == REAR_RIGHT) {
-    if (reverse)
-      digitalWrite(MOTOR4_DIR, HIGH);
-    else
-      digitalWrite(MOTOR4_DIR, LOW);
-    analogWrite(MOTOR4_PWM, spd);
-  }
+
+  // Set the motor speed
+  analogWrite(enable_pin, spd);
 }
 
 void setMotorSpeeds(int m1, int m2, int m3, int m4) {

@@ -1,4 +1,4 @@
-mode: single_order
+mode: multiple_orders
 
 single_order:
   interval: 10.0  
