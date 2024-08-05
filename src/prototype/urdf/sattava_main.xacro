@@ -5,6 +5,8 @@
     <xacro:include filename="lidar.xacro"/>
     <xacro:include filename="joint_macros.xacro"/>
     <xacro:include filename="wheel.xacro"/>
+    <xacro:include filename="hardware_interface"/>
+    <xacro:include filename="link_macros.xacro"/>
     
 
 </robot>

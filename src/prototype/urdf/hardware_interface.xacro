@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<!--=========================starting xacros================================-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prototype">
+<xacro:include filename="$(find prototype)/urdf/joint_macros.xacro"/>
+<xacro:include filename="$(find prototype)/urdf/link_macros.xacro"/>
+</robot>
