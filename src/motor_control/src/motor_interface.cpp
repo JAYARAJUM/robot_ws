@@ -18,29 +18,23 @@ namespace motor_control
         RCLCPP_INFO(rclcpp::get_logger("on init method"),": initialising..");
 
 
-        //configure the wheels and arduino_1.
-        cfg_1.back_left_wheel_name=info_.hardware_parameters["back_left_wheel_name"];
-        cfg_1.back_right_wheel_name=info_.hardware_parameters["back_right_wheel_name"];
-        cfg_1.loop_rate=stof(info_.hardware_parameters["loop_rate"]);
-        cfg_1.baud_rate=stoi(info_.hardware_parameters["baud_rate"]);
-        cfg_1.device=info_.hardware_parameters["device"];
-        cfg_1.timeout=stoi(info_.hardware_parameters["timeout"]);
-        cfg_1.enc_counts_per_rev=stoi(info_.hardware_parameters["enc_counts_per_rev"]);
-
-        //configure the wheels and arduino_2
-        cfg_2.front_left_wheel_name=info_.hardware_parameters["front_left_wheel_name"];
-        cfg_2.front_right_wheel_name=info_.hardware_parameters["front_right_wheel_name"];
-        cfg_2.loop_rate=stof(info_.hardware_parameters["loop_rate"]);
-        cfg_2.baud_rate=stoi(info_.hardware_parameters["baud_rate"]);
-        cfg_2.device=info_.hardware_parameters["device"];
-        cfg_2.timeout=stoi(info_.hardware_parameters["timeout"]);
-        cfg_2.enc_counts_per_rev=stoi(info_.hardware_parameters["enc_counts_per_rev"]);
+        //configure the wheels,front_arduino and back_arduino.
+        cfg_.back_left_wheel_name=info_.hardware_parameters["front_left_wheel_name"];
+        cfg_.back_right_wheel_name=info_.hardware_parameters["front_right_wheel_name"];
+        cfg_.back_left_wheel_name=info_.hardware_parameters["back_left_wheel_name"];
+        cfg_.back_right_wheel_name=info_.hardware_parameters["back_right_wheel_name"];
+        cfg_.loop_rate=stof(info_.hardware_parameters["loop_rate"]);
+        cfg_.baud_rate=stoi(info_.hardware_parameters["baud_rate"]);
+        cfg_.front_arduino=info_.hardware_parameters["front_arduino"];
+        cfg_.back_arduino=info_.hardware_parameters["back_arduino"];
+        cfg_.timeout=stoi(info_.hardware_parameters["timeout"]);
+        cfg_.enc_counts_per_rev=stoi(info_.hardware_parameters["enc_counts_per_rev"]);
 
         //setup the wheels
-        l_wheel_back.setup(cfg_1.back_left_wheel_name,cfg_1.enc_counts_per_rev);
-        r_wheel_back.setup(cfg_1.back_right_wheel_name,cfg_1.enc_counts_per_rev);
-        l_wheel_front.setup(cfg_2.front_left_wheel_name,cfg_2.enc_counts_per_rev);
-        r_wheel_front.setup(cfg_2.front_right_wheel_name,cfg_2.enc_counts_per_rev);
+        l_wheel_back.setup(cfg_.back_left_wheel_name,cfg_.enc_counts_per_rev);
+        r_wheel_back.setup(cfg_.back_right_wheel_name,cfg_.enc_counts_per_rev);
+        l_wheel_front.setup(cfg_.front_left_wheel_name,cfg_.enc_counts_per_rev);
+        r_wheel_front.setup(cfg_.front_right_wheel_name,cfg_.enc_counts_per_rev);
        
         //setup the arduino_1
         arduino_1.setup(cfg_1.device,cfg_1.baud_rate,cfg_1.timeout);
@@ -170,25 +164,18 @@ namespace motor_control
     hardware_interface::return_type MotorControl::write(const rclcpp::Time & /*time*/,const rclcpp::Duration &/*period*/)
     {
         static int write_count=0;
-      if(!arduino_1.connected())
+      if(!front_arduino.connected())
       {return hardware_interface::return_type::ERROR;}
 
-      if(!arduino_2.connected())
+      if(!back_arduino.connected())
       {return hardware_interface::return_type::ERROR;}
         
-       arduino_1.setMotorValues(l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_1.loop_rate,
+       front_arduino.setMotorValues(l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_1.loop_rate,
        r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_1.loop_rate);
 
-       arduino_2.setMotorValues(l_wheel_front.cmd / l_wheel_front.rads_per_count / cfg_2.loop_rate,
+       back_arduino.setMotorValues(l_wheel_front.cmd / l_wheel_front.rads_per_count / cfg_2.loop_rate,
        r_wheel_front.cmd / r_wheel_front.rads_per_count / cfg_2.loop_rate);
-    /*
-          if(write_count %10==0)
-       {
-       RCLCPP_INFO(rclcpp::get_logger("motor values"),"%f %f",l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_.loop_rate,r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_.loop_rate);
-       }
-       write_count++; 
-    */
-       // arduino_.setMotorValues(l_wheel_front.cmd,r_wheel_front.cmd);
+       
       return hardware_interface::return_type::OK;
 
     }

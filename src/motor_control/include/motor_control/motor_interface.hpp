@@ -34,33 +34,23 @@ class MotorControl: public hardware_interface::SystemInterface
     hardware_interface::return_type read(const rclcpp::Time &time,const rclcpp::Duration &period)override;
     hardware_interface::return_type write(const rclcpp::Time &time,const rclcpp::Duration &period) override;
 
-    private:
-    Config_1 cfg_1;
-    Comms arduino_1;
-    Wheel l_wheel_back;
-    Wheel r_wheel_back;
     
-    //Parameters for the robot
-    double hw_start_sec_1;
-    double hw_stop_sec_1;
     //Store the commands for the robot
     std::vector<double> hw_commands_1;
     std::vector<double> hw_states_1;
-    std::chrono::time_point<std::chrono::system_clock> time_1;
 
     private:
-    Config_2 cfg_2;
-    Comms arduino_2;
+    Config cfg_;
+    Comms front_arduino;
+    Comms back_arduino;
+    
     Wheel l_wheel_front;
     Wheel r_wheel_front;
+    Wheel l_wheel_back;
+    Wheel r_wheel_back;
+
     rclcpp::Logger log_;
-    //Parameters for the robot
-    double hw_start_sec_2;
-    double hw_stop_sec_2;
-    //Store the commands for the robot
-    std::vector<double> hw_commands_2;
-    std::vector<double> hw_states_2;
-    std::chrono::time_point<std::chrono::system_clock> time_2;
+    std::chrono::time_point<std::chrono::system_clock> time_1;
 };
 }//namespace for the robot
 
