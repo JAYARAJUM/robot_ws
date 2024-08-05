@@ -37,12 +37,12 @@ namespace motor_control
         r_wheel_front.setup(cfg_.front_right_wheel_name,cfg_.enc_counts_per_rev);
        
         //setup the arduino_1
-        front_arduino.setup(cfg_.device,cfg_.baud_rate,cfg_.timeout);
-        RCLCPP_INFO(rclcpp::get_logger("front_arduino"),"%s,%d",cfg_.device.c_str(),cfg_.baud_rate);
+        front_arduino.setup(cfg_.front_arduino,cfg_.baud_rate,cfg_.timeout);
+        RCLCPP_INFO(rclcpp::get_logger("front_arduino"),"%s,%d",cfg_.front_arduino.c_str(),cfg_.baud_rate);
         return CallbackReturn::SUCCESS;
 
-        back_arduino.setup(cfg_.device,cfg_.baud_rate,cfg_.timeout);
-        RCLCPP_INFO(rclcpp::get_logger("back_arduino"),"%s,%d",cfg_.device.c_str(),cfg_.baud_rate);
+        back_arduino.setup(cfg_.back_arduino,cfg_.baud_rate,cfg_.timeout);
+        RCLCPP_INFO(rclcpp::get_logger("back_arduino"),"%s,%d",cfg_.back_arduino.c_str(),cfg_.baud_rate);
         return CallbackReturn::SUCCESS;
 
     }
