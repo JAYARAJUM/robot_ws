@@ -36,8 +36,8 @@ class MotorControl: public hardware_interface::SystemInterface
 
     
     //Store the commands for the robot
-    std::vector<double> hw_commands_1;
-    std::vector<double> hw_states_1;
+    std::vector<double> hw_commands_;
+    std::vector<double> hw_states_;
 
     private:
     Config cfg_;
@@ -50,7 +50,7 @@ class MotorControl: public hardware_interface::SystemInterface
     Wheel r_wheel_back;
 
     rclcpp::Logger log_;
-    std::chrono::time_point<std::chrono::system_clock> time_1;
+    std::chrono::time_point<std::chrono::system_clock> time_;
 };
 }//namespace for the robot
 
