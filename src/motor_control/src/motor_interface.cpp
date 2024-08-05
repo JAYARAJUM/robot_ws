@@ -37,12 +37,12 @@ namespace motor_control
         r_wheel_front.setup(cfg_.front_right_wheel_name,cfg_.enc_counts_per_rev);
        
         //setup the arduino_1
-        arduino_1.setup(cfg_1.device,cfg_1.baud_rate,cfg_1.timeout);
-        RCLCPP_INFO(rclcpp::get_logger("arduino_1"),"%s,%d",cfg_1.device.c_str(),cfg_1.baud_rate);
+        front_arduino.setup(cfg_.device,cfg_.baud_rate,cfg_.timeout);
+        RCLCPP_INFO(rclcpp::get_logger("front_arduino"),"%s,%d",cfg_.device.c_str(),cfg_.baud_rate);
         return CallbackReturn::SUCCESS;
 
-        arduino_2.setup(cfg_2.device,cfg_2.baud_rate,cfg_2.timeout);
-        RCLCPP_INFO(rclcpp::get_logger("arduino_2"),"%s,%d",cfg_2.device.c_str(),cfg_2.baud_rate);
+        back_arduino.setup(cfg_.device,cfg_.baud_rate,cfg_.timeout);
+        RCLCPP_INFO(rclcpp::get_logger("back_arduino"),"%s,%d",cfg_.device.c_str(),cfg_.baud_rate);
         return CallbackReturn::SUCCESS;
 
     }
@@ -104,8 +104,8 @@ namespace motor_control
     CallbackReturn MotorControl::on_activate(const rclcpp_lifecycle::State &/*previous_state*/)
     {
       RCLCPP_INFO(rclcpp::get_logger("motor_control"),"activating this now ...");
-       arduino_1.sendEmpytMsg();
-       arduino_2.sendEmpytMsg();
+       front_arduino.sendEmpytMsg();
+       back_arduino.sendEmpytMsg();
       //arduino_.setPidValues(9,7,0,100);
       //arduino.setPidValues(14,7,0,100);
       //arduino_.setPidValues(50,40,0,100);
@@ -123,40 +123,40 @@ namespace motor_control
 
     hardware_interface::return_type MotorControl::read(const rclcpp::Time &/*time*/,const rclcpp::Duration &/*period*/)
     {
-        auto new_time_1=std::chrono::system_clock::now();
-        std::chrono::duration<double> diff_1=new_time_1-time_1;
-        double deltaSeconds_1=diff_1.count();
-        time_1=new_time_1;
+        auto new_time_=std::chrono::system_clock::now();
+        std::chrono::duration<double> diff_=new_time_-time_;
+        double deltaSeconds_=diff_.count();
+        time_=new_time_;
 
-        auto new_time_2=std::chrono::system_clock::now();
+        /*auto new_time_2=std::chrono::system_clock::now();
         std::chrono::duration<double> diff_2=new_time_2-time_2;
         double deltaSeconds_2=diff_2.count();
-        time_2=new_time_2;
+        time_2=new_time_2;*/
 
-        if(!arduino_1.connected())
+        if(!front_arduino.connected())
         {return hardware_interface::return_type::ERROR;}
 
-        if(!arduino_2.connected())
+        if(!back_arduino.connected())
         {return hardware_interface::return_type::ERROR;}
 
-        arduino_1.readEncoderValues(l_wheel_back.enc,r_wheel_back.enc);
-        arduino_2.readEncoderValues(l_wheel_front.enc,r_wheel_back.enc);
+        back_arduino.readEncoderValues(l_wheel_back.enc,r_wheel_back.enc);
+        front_arduino.readEncoderValues(l_wheel_front.enc,r_wheel_back.enc);
 
         double prev_pos=l_wheel_back.pos;
         l_wheel_back.pos=l_wheel_back.calcEncAngle();
-        l_wheel_back.vel=(l_wheel_back.pos-prev_pos)/deltaSeconds_1;
+        l_wheel_back.vel=(l_wheel_back.pos-prev_pos)/deltaSeconds_;
 
         prev_pos=r_wheel_back.pos;
         r_wheel_back.pos=r_wheel_back.calcEncAngle();
-        r_wheel_back.vel=(r_wheel_back.pos-prev_pos)/deltaSeconds_1;
+        r_wheel_back.vel=(r_wheel_back.pos-prev_pos)/deltaSeconds_;
 
         double prev_pose=l_wheel_front.pos;
         l_wheel_front.pos=l_wheel_front.calcEncAngle();
-        l_wheel_front.vel=(l_wheel_front.pos-prev_pose)/deltaSeconds_2;
+        l_wheel_front.vel=(l_wheel_front.pos-prev_pose)/deltaSeconds_;
 
         prev_pos=r_wheel_front.pos;
         r_wheel_front.pos=r_wheel_front.calcEncAngle();
-        r_wheel_front.vel=(r_wheel_front.pos-prev_pose)/deltaSeconds_2;
+        r_wheel_front.vel=(r_wheel_front.pos-prev_pose)/deltaSeconds_;
 
         return hardware_interface::return_type::OK;
     }
@@ -170,11 +170,11 @@ namespace motor_control
       if(!back_arduino.connected())
       {return hardware_interface::return_type::ERROR;}
         
-       front_arduino.setMotorValues(l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_1.loop_rate,
-       r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_1.loop_rate);
+       front_arduino.setMotorValues(l_wheel_back.cmd / l_wheel_back.rads_per_count / cfg_.loop_rate,
+       r_wheel_back.cmd / r_wheel_back.rads_per_count / cfg_.loop_rate);
 
-       back_arduino.setMotorValues(l_wheel_front.cmd / l_wheel_front.rads_per_count / cfg_2.loop_rate,
-       r_wheel_front.cmd / r_wheel_front.rads_per_count / cfg_2.loop_rate);
+       back_arduino.setMotorValues(l_wheel_front.cmd / l_wheel_front.rads_per_count / cfg_.loop_rate,
+       r_wheel_front.cmd / r_wheel_front.rads_per_count / cfg_.loop_rate);
        
       return hardware_interface::return_type::OK;
 
