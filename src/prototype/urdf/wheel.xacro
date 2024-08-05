@@ -35,22 +35,22 @@
 
    <!-- *********************wheel links and joints***************************************-->
 
-<xacro:joint_wheel name="back_right_wheel_joint" origin="-3.5 -3.15 -0.75" 
+<xacro:joint_wheel name="back_right_wheel_joint" origin="-0.35 -0.315 -0.075" 
 parent="chassis_1" child="back_right_wheel"/>
 
 <xacro:wheel  wheel_name="back_right_wheel"/>
 
-<xacro:joint_wheel name="back_left_wheel_joint" origin="-3.5 3.15 -0.75" 
+<xacro:joint_wheel name="back_left_wheel_joint" origin="-0.35 0.315 -0.075" 
 parent="chassis_1" child="back_left_wheel"/>
 
 <xacro:wheel  wheel_name="back_left_wheel"/>
 
-<xacro:joint_wheel name="front_right_wheel_joint" origin="3.5 -3.15 -0.75" 
+<xacro:joint_wheel name="front_right_wheel_joint" origin="0.35 -0.315 -0.075" 
 parent="chassis_1" child="front_right_wheel"/>
 
 <xacro:wheel  wheel_name="front_right_wheel"/>
 
-<xacro:joint_wheel name="front_left_wheel_joint" origin="3.5 3.15 -0.75" 
+<xacro:joint_wheel name="front_left_wheel_joint" origin="0.35 0.315 -0.075" 
 parent="chassis_1" child="front_left_wheel"/>
 
 <xacro:wheel  wheel_name="front_left_wheel"/>

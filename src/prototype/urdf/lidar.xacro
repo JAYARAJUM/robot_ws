@@ -3,21 +3,21 @@
     <link name="base_laser">
         <visual>
             <geometry>
-                <cylinder radius="0.5" length="0.77"/>
+                <cylinder radius="0.05" length="0.077"/>
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1"/>
             </material>
         </visual>
-        <visual>
+        <!-- <visual>
             <origin xyz="0 0 0"/>
             <geometry>
-                <cylinder radius="0.01" length="0.1"/>
+                <cylinder radius="0.01" length="0.07"/>
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1"/>
             </material>
-        </visual>
+        </visual>-->
             
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -33,7 +33,7 @@
     </link>
     
     <joint name="base_laser_joint" type="fixed">
-        <origin xyz="0.0 0.0 0.75" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.0 0.0 0.075" rpy="0.0 0.0 0.0"/>
         <parent link="chassis_1"/>
         <child link="base_laser"/>
     </joint>

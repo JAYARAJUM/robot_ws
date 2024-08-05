@@ -2,13 +2,13 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
-    <xacro:property name="body_length_1" value="8.0"/>
-    <xacro:property name="body_width_1" value="6.0"/>
-    <xacro:property name="body_height_1" value="1.5"/>
+    <xacro:property name="body_length_1" value="0.8"/>
+    <xacro:property name="body_width_1" value="0.6"/>
+    <xacro:property name="body_height_1" value="0.15"/>
 
-    <xacro:property name="body_length_2" value="8.0"/>
-    <xacro:property name="body_width_2" value="6.0"/>
-    <xacro:property name="body_height_2" value="1.0"/>
+    <xacro:property name="body_length_2" value="0.8"/>
+    <xacro:property name="body_width_2" value="0.6"/>
+    <xacro:property name="body_height_2" value="0.1"/>
 
     <link name="base_link"></link>
     <joint name="base_joint" type="fixed">
@@ -23,7 +23,7 @@
     <joint name="chassis_1_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis_1"/>
-        <origin xyz="0.0 0.0 1.2" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.12" rpy="0 0 0" />
     </joint>
 
     <link name="chassis_1">
@@ -39,13 +39,13 @@
     <joint name="sup_rod_1" type="fixed">
         <parent link="chassis_1"/>
         <child link="sup_rod_1"/>
-        <origin xyz="-3.5 2.5 1.15" rpy="0 0 0"/>
+        <origin xyz="-0.35 0.25 0.115" rpy="0 0 0"/>
     </joint>
 
     <link name="sup_rod_1">
         <visual>
             <geometry>
-                <box size="0.2 0.2 0.8"/>
+                <box size="0.02 0.02 0.08"/>
             </geometry>
             <material name="sup_ros_2_red">
                 <color rgba="0.8 0.8 0.8"/>
@@ -56,13 +56,13 @@
     <joint name="sup_rod_2_joint" type="fixed">
         <parent link="chassis_1"/>
         <child link="sup_rod_2"/>
-        <origin xyz="3.5 -2.5 1.15" rpy="0 0 0"/>
+        <origin xyz="0.35 -0.25 0.115" rpy="0 0 0"/>
     </joint>
 
     <link name="sup_rod_2">
         <visual>
             <geometry>
-                <box size="0.2 0.2 0.8"/>
+                <box size="0.02 0.02 0.08"/>
             </geometry>
             <material name="sup_ros_2_red">
                 <color rgba="0.8 0.8 0.8"/>
@@ -73,13 +73,13 @@
     <joint name="sup_rod_3_joint" type="fixed">
         <parent link="chassis_1"/>
         <child link="sup_rod_3"/>
-        <origin xyz="-3.5 -2.5 1.15" rpy="0 0 0"/>
+        <origin xyz="-0.35 -0.25 0.115" rpy="0 0 0"/>
     </joint>
 
     <link name="sup_rod_3">
         <visual>
             <geometry>
-                <box size="0.2 0.2 0.8"/>
+                <box size="0.02 0.02 0.08"/>
             </geometry>
             <material name="sup_ros_3_red">
                 <color rgba="0.8 0.8 0.8"/>
@@ -90,13 +90,13 @@
     <joint name="sup_rod_4_joint" type="fixed">
         <parent link="chassis_1"/>
         <child link="sup_rod_4"/>
-        <origin xyz="3.5 2.5 1.15" rpy="0 0 0"/>
+        <origin xyz="0.35 0.25 0.115" rpy="0 0 0"/>
     </joint>
 
     <link name="sup_rod_4">
         <visual>
             <geometry>
-                <box size="0.2 0.2 0.8"/>
+                <box size="0.02 0.02 0.08"/>
             </geometry>
             <material name="sup_ros_4_red">
                 <color rgba="0.8 0.8 0.8"/>
@@ -107,7 +107,7 @@
     <joint name="chassis_2_joint" type="fixed">
         <parent link="chassis_1"/>
         <child link="chassis_2"/>
-        <origin xyz="0.0 0.0 2.05" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.0 0.0 0.205" rpy="0.0 0.0 0.0"/>
     </joint>
 
     <link name="chassis_2">
@@ -124,8 +124,8 @@
     <joint name="imu_joint" type="fixed">
         <parent link="chassis_1"/>
         <child link="imu_link"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <origin xyz="0.0 0.0 1.00" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 0.10"/>
+        <origin xyz="0.0 0.0 0.100" rpy="0.0 0.0 0.0"/>
     </joint>
        
     <link name="imu_link"></link>
