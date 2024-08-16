@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/build/prototype/rosidl_typesupport_fastrtps_c/prototype/action/detail/confirmation__rosidl_typesupport_fastrtps_c.h

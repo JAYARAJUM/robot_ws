@@ -1,4 +1,0 @@
-Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/serial -- -j8 -l8
-Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake --build /home/jayaaraju/waiter_robot_ws/src/build/serial -- -j8 -l8
-Invoking command in '/home/jayaaraju/waiter_robot_ws/src/build/serial': /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/serial
-Invoked command in '/home/jayaaraju/waiter_robot_ws/src/build/serial' returned '0': /usr/bin/cmake --install /home/jayaaraju/waiter_robot_ws/src/build/serial

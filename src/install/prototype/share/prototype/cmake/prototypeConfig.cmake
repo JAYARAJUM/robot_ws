@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/build/prototype/ament_cmake_core/prototypeConfig.cmake

@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/build/py_trees_ros_tutorials/launch/tutorial_one_data_gathering_launch.py

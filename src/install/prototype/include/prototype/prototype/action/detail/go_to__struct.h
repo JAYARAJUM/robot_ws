@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/build/prototype/rosidl_generator_c/prototype/action/detail/go_to__struct.h

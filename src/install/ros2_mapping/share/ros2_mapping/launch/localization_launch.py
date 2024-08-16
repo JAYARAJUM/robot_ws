@@ -1,1 +1,0 @@
-/home/jayaaraju/waiter_robot_ws/src/ros2_mapping/launch/localization_launch.py

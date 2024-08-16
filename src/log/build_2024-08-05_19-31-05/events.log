@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000253] (-) JobUnselected: {'identifier': 'motor_control'}
-[0.000291] (-) JobUnselected: {'identifier': 'navigator_planner'}
-[0.000312] (-) JobUnselected: {'identifier': 'prototype'}
-[0.000330] (-) JobUnselected: {'identifier': 'py_trees_ros_tutorials'}
-[0.000346] (-) JobUnselected: {'identifier': 'ros2_mapping'}
-[0.000362] (-) JobUnselected: {'identifier': 'serial'}
-[0.000377] (-) JobUnselected: {'identifier': 'waiter_tree'}
-[0.000393] (-) EventReactorShutdown: {}
